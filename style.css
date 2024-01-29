@@ -2,6 +2,49 @@ body {
   background-image: url();
 }
 
-section .header {
+section .section-1 {
   background-color: aqua;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+}
+section .section-1 .section-1-bg-image img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  height: 600px;
+  width: 100%;
+}
+section .section-1 .section-1-header-image {
+  background-color: black;
+  width: 500px;
+  height: 500px;
+  animation: bounce 500ms 1 ease-in-out;
+}
+section .section-2 {
+  background-color: rgb(139, 187, 136);
+  height: 600px;
+}
+section .section-3 {
+  background-color: rgb(138, 162, 240);
+  height: 600px;
+}
+section .section-4 {
+  background-color: rgb(238, 166, 232);
+  height: 600px;
+}
+section .section-5 {
+  background-color: rgb(238, 178, 173);
+  height: 600px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-600px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }/*# sourceMappingURL=style.css.map */
