@@ -16,13 +16,33 @@ section .section-1 .section-1-bg-image img {
 }
 section .section-1 .section-1-header-image {
   background-color: black;
-  width: 500px;
-  height: 500px;
+  width: 80%;
+  height: 400px;
   animation: bounce 500ms 1 ease-in-out;
 }
 section .section-2 {
   background-color: rgb(139, 187, 136);
   height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+section .section-2 .section-2-tier {
+  width: 90%;
+  height: 100px;
+  background-color: black;
+}
+section .section-2 .section-2-tier.tier-1 {
+  align-self: flex-start;
+  animation: slideRight 500ms 1 ease-in-out;
+}
+section .section-2 .section-2-tier.tier-2 {
+  align-self: flex-end;
+  animation: slideLeft 500ms 1 ease-in-out;
+}
+section .section-2 .section-2-tier.tier-3 {
+  align-self: flex-start;
+  animation: slideRight 500ms 1 ease-in-out;
 }
 section .section-3 {
   background-color: rgb(138, 162, 240);
@@ -46,5 +66,27 @@ section .section-5 {
   }
   100% {
     transform: translateY(0px);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-300px);
+  }
+  50% {
+    transform: translateX(40px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(300px);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }/*# sourceMappingURL=style.css.map */
