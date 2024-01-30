@@ -3,29 +3,47 @@ body {
 }
 
 section .section-1 {
-  background-color: aqua;
-  height: 600px;
   display: flex;
   justify-content: center;
+  margin: 0;
+}
+section .section-1 .section-1-bg-image {
+  position: relative;
 }
 section .section-1 .section-1-bg-image img {
-  -o-object-fit: fill;
-     object-fit: fill;
-  height: 600px;
-  width: 100%;
+  height: 100%;
 }
-section .section-1 .section-1-header-image {
-  background-color: black;
+section .section-1 .section-1-fully-loaded-image {
   width: 80%;
   height: 400px;
-  animation: bounce 500ms 1 ease-in-out;
+  margin: -1rem 0 0;
+  animation: bounce 500ms ease-in 1, shake 200ms linear 500ms 2;
+  position: absolute;
+}
+section .section-1 .section-1-gifts-image {
+  bottom: 130px;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  left: 92px;
+}
+section .section-1 .section-1-gifts-image img {
+  opacity: 0;
+  animation: fadeIn 500ms forwards 900ms 1;
 }
 section .section-2 {
   background-color: rgb(139, 187, 136);
-  height: 600px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  gap: var(--gutter);
+  padding: var(--gutter) 0;
+}
+section .section-2 .section-2-header-image {
+  align-self: center;
+  color: white;
+  width: 90%;
+  background-color: black;
+  padding: 1.2rem;
 }
 section .section-2 .section-2-tier {
   width: 90%;
@@ -34,15 +52,15 @@ section .section-2 .section-2-tier {
 }
 section .section-2 .section-2-tier.tier-1 {
   align-self: flex-start;
-  animation: slideRight 500ms 1 ease-in-out;
+  animation: slideRight 500ms ease-in 1;
 }
 section .section-2 .section-2-tier.tier-2 {
   align-self: flex-end;
-  animation: slideLeft 500ms 1 ease-in-out;
+  animation: slideLeft 500ms ease-in 1;
 }
 section .section-2 .section-2-tier.tier-3 {
   align-self: flex-start;
-  animation: slideRight 500ms 1 ease-in-out;
+  animation: slideRight 500ms ease-in 1;
 }
 section .section-3 {
   background-color: rgb(138, 162, 240);
@@ -68,9 +86,28 @@ section .section-5 {
     transform: translateY(0px);
   }
 }
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-5deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes slideRight {
   0% {
-    transform: translateX(-300px);
+    transform: translateX(-1000px);
   }
   50% {
     transform: translateX(40px);
@@ -81,7 +118,7 @@ section .section-5 {
 }
 @keyframes slideLeft {
   0% {
-    transform: translateX(300px);
+    transform: translateX(1000px);
   }
   50% {
     transform: translateX(-40px);
