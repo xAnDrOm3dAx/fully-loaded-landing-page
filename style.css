@@ -2,77 +2,83 @@ body {
   background-image: url();
 }
 
-section .section-1 {
+section .section-1-wrapper {
   display: flex;
   justify-content: center;
   margin: 0;
 }
-section .section-1 .section-1-bg-image {
+section .section-1-wrapper .section-1-bg-image {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
-section .section-1 .section-1-bg-image img {
-  height: 100%;
-}
-section .section-1 .section-1-fully-loaded-image {
-  width: 80%;
-  height: 400px;
+section .section-1-wrapper .section-1-fully-loaded-image {
+  width: 70%;
   margin: -1rem 0 0;
-  animation: bounce 500ms ease-in 1, shake 200ms linear 500ms 2;
   position: absolute;
 }
-section .section-1 .section-1-gifts-image {
-  bottom: 130px;
-  width: 200px;
+section .section-1-wrapper .section-1-fully-loaded-image img {
+  animation: bounce 500ms ease-in 1;
+}
+section .section-1-wrapper .section-1-gifts-image {
+  bottom: 0px;
+  width: 60%;
   height: auto;
+  display: flex;
+  justify-content: center;
   position: absolute;
-  left: 92px;
 }
-section .section-1 .section-1-gifts-image img {
+section .section-1-wrapper .section-1-gifts-image img {
   opacity: 0;
   animation: fadeIn 500ms forwards 900ms 1;
 }
-section .section-2 {
+section .section-2-wrapper {
   background-color: rgb(139, 187, 136);
   display: flex;
   flex-direction: column;
   gap: var(--gutter);
   padding: var(--gutter) 0;
 }
-section .section-2 .section-2-header-image {
+section .section-2-wrapper .section-2-header-image {
   align-self: center;
   color: white;
   width: 90%;
   background-color: black;
   padding: 1.2rem;
 }
-section .section-2 .section-2-tier {
+section .section-2-wrapper .section-2-tier {
   width: 90%;
   height: 100px;
   background-color: black;
 }
-section .section-2 .section-2-tier.tier-1 {
+section .section-2-wrapper .section-2-tier.tier-1 {
   align-self: flex-start;
-  animation: slideRight 500ms ease-in 1;
 }
-section .section-2 .section-2-tier.tier-2 {
+section .section-2-wrapper .section-2-tier.tier-2 {
   align-self: flex-end;
-  animation: slideLeft 500ms ease-in 1;
 }
-section .section-2 .section-2-tier.tier-3 {
+section .section-2-wrapper .section-2-tier.tier-3 {
   align-self: flex-start;
-  animation: slideRight 500ms ease-in 1;
 }
-section .section-3 {
+section .section-3-wrapper {
   background-color: rgb(138, 162, 240);
   height: 600px;
 }
-section .section-4 {
+section .section-4-wrapper {
   background-color: rgb(238, 166, 232);
   height: 600px;
 }
-section .section-5 {
+section .section-5-wrapper {
   background-color: rgb(238, 178, 173);
   height: 600px;
+}
+
+.animate {
+  animation: fadeIn 500ms 500ms both;
+}
+
+.undo-animate {
+  opacity: 0;
 }
 
 @keyframes bounce {
@@ -86,17 +92,6 @@ section .section-5 {
     transform: translateY(0px);
   }
 }
-@keyframes shake {
-  0%, 100% {
-    transform: rotate(0);
-  }
-  25% {
-    transform: rotate(-5deg);
-  }
-  75% {
-    transform: rotate(5deg);
-  }
-}
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -105,25 +100,11 @@ section .section-5 {
     opacity: 1;
   }
 }
-@keyframes slideRight {
+@keyframes fadeOut {
   0% {
-    transform: translateX(-1000px);
-  }
-  50% {
-    transform: translateX(40px);
+    opacity: 1;
   }
   100% {
-    transform: translateX(0px);
-  }
-}
-@keyframes slideLeft {
-  0% {
-    transform: translateX(1000px);
-  }
-  50% {
-    transform: translateX(-40px);
-  }
-  100% {
-    transform: translateX(0px);
+    opacity: 0;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -3,33 +3,34 @@ body {
 }
 
 section {
-  .section-1 {
+  .section-1-wrapper {
     display: flex;
     justify-content: center;
     margin: 0;
 
     .section-1-bg-image {
       position: relative;
-
-      & img {
-        height: 100%;
-      }
+      display: flex;
+      justify-content: center;
     }
 
     .section-1-fully-loaded-image {
-      width: 80%;
-      height: 400px;
+      width: 70%;
       margin: -1rem 0 0;
-      animation: bounce 500ms ease-in 1, shake 200ms linear 500ms 2;
       position: absolute;
+
+      & img {
+        animation: bounce 500ms ease-in 1;
+      }
     }
 
     .section-1-gifts-image {
-      bottom: 130px;
-      width: 200px;
+      bottom: 0px;
+      width: 60%;
       height: auto;
+      display: flex;
+      justify-content: center;
       position: absolute;
-      left: 92px;
 
       & img {
         opacity: 0;
@@ -38,7 +39,7 @@ section {
     }
   }
 
-  .section-2 {
+  .section-2-wrapper {
     background-color: rgb(139, 187, 136);
     display: flex;
     flex-direction: column;
@@ -60,35 +61,44 @@ section {
 
       &.tier-1 {
         align-self: flex-start;
-        animation: slideRight 500ms ease-in 1;
+        // animation: slideRight 500ms ease-in 1;
       }
 
       &.tier-2 {
         align-self: flex-end;
-        animation: slideLeft 500ms ease-in 1;
+        // animation: slideLeft 500ms ease-in 1;
       }
 
       &.tier-3 {
         align-self: flex-start;
-        animation: slideRight 500ms ease-in 1;
+        // animation: slideRight 500ms ease-in 1;
       }
     }
   }
 
-  .section-3 {
+  .section-3-wrapper {
     background-color: rgb(138, 162, 240);
     height: 600px;
   }
 
-  .section-4 {
+  .section-4-wrapper {
     background-color: rgb(238, 166, 232);
     height: 600px;
   }
 
-  .section-5 {
+  .section-5-wrapper {
     background-color: rgb(238, 178, 173);
     height: 600px;
   }
+}
+
+// Animations
+.animate {
+  animation: fadeIn 500ms 500ms both;
+}
+
+.undo-animate {
+  opacity: 0;
 }
 
 // Keyframes
@@ -104,20 +114,6 @@ section {
   }
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: rotate(0);
-  }
-  25% {
-    transform: rotate(-5deg);
-  }
-
-  75% {
-    transform: rotate(5deg);
-  }
-}
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -127,26 +123,35 @@ section {
   }
 }
 
-@keyframes slideRight {
+@keyframes fadeOut {
   0% {
-    transform: translateX(-1000px);
-  }
-  50% {
-    transform: translateX(40px);
+    opacity: 1;
   }
   100% {
-    transform: translateX(0px);
+    opacity: 0;
   }
 }
 
-@keyframes slideLeft {
-  0% {
-    transform: translateX(1000px);
-  }
-  50% {
-    transform: translateX(-40px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
+// @keyframes slideRight {
+//   0% {
+//     transform: translateX(-2000px);
+//   }
+//   50% {
+//     transform: translateX(40px);
+//   }
+//   100% {
+//     transform: translateX(0px);
+//   }
+// }
+
+// @keyframes slideLeft {
+//   0% {
+//     transform: translateX(2000px);
+//   }
+//   50% {
+//     transform: translateX(-40px);
+//   }
+//   100% {
+//     transform: translateX(0px);
+//   }
+// }
