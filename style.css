@@ -2,11 +2,6 @@ body {
   background-image: url();
 }
 
-section .section-1-wrapper {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-}
 section .section-1-wrapper .section-1-bg-image {
   position: relative;
   display: flex;
@@ -16,8 +11,8 @@ section .section-1-wrapper .section-1-fully-loaded-image {
   width: 70%;
   margin: -1rem 0 0;
   position: absolute;
-}
-section .section-1-wrapper .section-1-fully-loaded-image img {
+  display: flex;
+  justify-content: center;
   animation: bounce 500ms ease-in 1;
 }
 section .section-1-wrapper .section-1-gifts-image {
@@ -29,8 +24,8 @@ section .section-1-wrapper .section-1-gifts-image {
   position: absolute;
 }
 section .section-1-wrapper .section-1-gifts-image img {
-  opacity: 0;
   animation: fadeIn 500ms forwards 900ms 1;
+  opacity: 0;
 }
 section .section-2-wrapper {
   background-color: rgb(139, 187, 136);
