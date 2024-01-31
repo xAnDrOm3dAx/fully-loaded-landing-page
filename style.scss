@@ -2,40 +2,42 @@ body {
   background-image: url();
 }
 
-section {
+.section-1-container {
   .section-1-wrapper {
-    .section-1-bg-image {
-      position: relative;
-      display: flex;
-      justify-content: center;
-    }
-
-    .section-1-fully-loaded-image {
-      width: 70%;
-      margin: -1rem 0 0;
-      position: absolute;
-      display: flex;
-      justify-content: center;
-      animation: bounce 500ms ease-in 1;
-    }
-
-    .section-1-gifts-image {
-      bottom: 0px;
-      width: 60%;
-      height: auto;
-      display: flex;
-      justify-content: center;
-      position: absolute;
-
-      & img {
-        animation: fadeIn 500ms forwards 900ms 1;
-        opacity: 0;
-      }
-    }
+    position: relative;
+    display: flex;
+    justify-content: center;
   }
 
+  .section-1-fully-loaded-image {
+    width: 70%;
+    margin: -1rem 0 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    animation: bounce 500ms ease-in 1;
+  }
+
+  .section-1-gifts-image {
+    bottom: 0px;
+    width: 60%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+
+    & img {
+      animation: fadeIn 500ms forwards 900ms 1;
+      opacity: 0;
+    }
+  }
+}
+
+.section-2-container {
+  background-color: rgb(139, 187, 136);
+  width: 100%;
+
   .section-2-wrapper {
-    background-color: rgb(139, 187, 136);
     display: flex;
     flex-direction: column;
     gap: var(--gutter);
@@ -70,21 +72,21 @@ section {
       }
     }
   }
+}
 
-  .section-3-wrapper {
-    background-color: rgb(138, 162, 240);
-    height: 600px;
-  }
+.section-3-container {
+  background-color: rgb(138, 162, 240);
+  height: 600px;
+}
 
-  .section-4-wrapper {
-    background-color: rgb(238, 166, 232);
-    height: 600px;
-  }
+.section-4-container {
+  background-color: rgb(238, 166, 232);
+  height: 600px;
+}
 
-  .section-5-wrapper {
-    background-color: rgb(238, 178, 173);
-    height: 600px;
-  }
+.section-5-container {
+  background-color: rgb(238, 178, 173);
+  height: 600px;
 }
 
 // Animations
