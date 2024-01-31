@@ -2,9 +2,14 @@ body {
   background-image: url();
 }
 
+.section-1-container .section-1-wrapper-mobile {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
 .section-1-container .section-1-wrapper {
   position: relative;
-  display: flex;
+  display: none;
   justify-content: center;
 }
 .section-1-container .section-1-fully-loaded-image {
@@ -26,6 +31,14 @@ body {
 .section-1-container .section-1-gifts-image img {
   animation: fadeIn 500ms forwards 900ms 1;
   opacity: 0;
+}
+@media (min-width: 992px) {
+  .section-1-container .section-1-wrapper-mobile {
+    display: none;
+  }
+  .section-1-container .section-1-wrapper {
+    display: flex;
+  }
 }
 
 .section-2-container {
