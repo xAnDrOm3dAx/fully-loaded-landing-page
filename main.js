@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-const tags = document.querySelectorAll(".section-2-header-image");
+const tags = document.querySelectorAll("");
 
 tags.forEach((tag) => {
   observer.observe(tag);
