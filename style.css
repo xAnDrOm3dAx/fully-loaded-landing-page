@@ -13,7 +13,7 @@ body {
   justify-content: center;
 }
 .section-1-container .section-1-fully-loaded-image {
-  width: 70%;
+  width: 30%;
   margin: -1rem 0 0;
   position: absolute;
   display: flex;
@@ -22,7 +22,7 @@ body {
 }
 .section-1-container .section-1-gifts-image {
   bottom: 0px;
-  width: 60%;
+  width: 23%;
   height: auto;
   display: flex;
   justify-content: center;
