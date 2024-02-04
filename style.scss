@@ -21,7 +21,8 @@ body {
     position: absolute;
     display: flex;
     justify-content: center;
-    animation: bounce 500ms ease-in 1;
+    transform: translateY(-1000px);
+    animation: bounce 500ms forwards 1s ease-in;
   }
 
   .section-1-gifts-image {
@@ -33,7 +34,7 @@ body {
     position: absolute;
 
     & img {
-      animation: fadeIn 500ms forwards 900ms 1;
+      animation: fadeIn 500ms forwards 1s ease-in;
       opacity: 0;
     }
   }
@@ -183,7 +184,7 @@ body {
 
 // Animations
 .animate {
-  animation: fadeIn 500ms 500ms both;
+  animation: fadeInAndScale 500ms 500ms both;
 }
 
 .undo-animate {
@@ -209,6 +210,22 @@ body {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes fadeInAndScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  80% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
