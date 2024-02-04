@@ -15,7 +15,7 @@
   display: flex;
   justify-content: center;
   transform: translateY(-1000px);
-  animation: bounce 500ms forwards 1s ease-in;
+  animation: bounce 500ms ease-in 500ms 1 forwards;
 }
 .section-1-container .section-1-gifts-image {
   bottom: 0px;
@@ -26,7 +26,7 @@
   position: absolute;
 }
 .section-1-container .section-1-gifts-image img {
-  animation: fadeIn 500ms forwards 1s ease-in;
+  animation: fadeIn 500ms ease-in 1s forwards;
   opacity: 0;
 }
 @media (min-width: 768px) {
