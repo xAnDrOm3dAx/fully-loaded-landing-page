@@ -110,7 +110,7 @@
 }
 @media (min-width: 480px) {
   .section-5-container .section-5-wrapper {
-    max-width: none;
+    max-width: 768px;
   }
 }
 .section-5-container .section-5-wrapper .button-links {
@@ -152,20 +152,13 @@
 @media (min-width: 480px) {
   .section-5-container .section-5-wrapper .logos {
     flex-direction: row;
-    justify-content: space-evenly;
   }
 }
-.section-5-container .section-5-wrapper .logos .sherrif-logo,
 .section-5-container .section-5-wrapper .logos .clipsal-logo {
-  max-width: 300px;
+  flex: 2;
 }
-@media (min-width: 480px) {
-  .section-5-container .section-5-wrapper .logos .sherrif-logo,
-  .section-5-container .section-5-wrapper .logos .clipsal-logo {
-    max-width: none;
-    display: flex;
-    justify-content: center;
-  }
+.section-5-container .section-5-wrapper .logos .sherrif-logo {
+  flex: 1;
 }
 
 .animate {
