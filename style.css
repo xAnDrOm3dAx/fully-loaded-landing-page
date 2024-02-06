@@ -1,41 +1,55 @@
 .section-1-container .section-1-wrapper-mobile {
-  display: grid;
-  width: 100%;
-  height: 100%;
-}
-.section-1-container .section-1-wrapper {
-  position: relative;
-  display: none;
-  justify-content: center;
-}
-.section-1-container .section-1-fully-loaded-image {
-  width: 40%;
-  margin: -1rem 0 0;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  transform: translateY(-1000px);
-  animation: bounce 500ms ease-in 500ms 1 forwards;
-}
-.section-1-container .section-1-gifts-image {
-  bottom: 0px;
-  width: 23%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-}
-.section-1-container .section-1-gifts-image img {
-  animation: fadeIn 500ms ease-in 1s forwards;
-  opacity: 0;
+  display: block;
 }
 @media (min-width: 768px) {
   .section-1-container .section-1-wrapper-mobile {
     display: none;
   }
+}
+.section-1-container .section-1-wrapper {
+  display: none;
+  height: 100vh;
+  width: 100%;
+  background-image: url("assets/background-images/background-image-1920_x_1080.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+@media (min-width: 768px) {
   .section-1-container .section-1-wrapper {
     display: flex;
+    justify-content: center;
   }
+}
+.section-1-container .section-1-wrapper .section-1-fully-loaded-image {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  height: 60%;
+  position: absolute;
+  top: -50px;
+  display: flex;
+  justify-content: center;
+}
+.section-1-container .section-1-wrapper .section-1-fully-loaded-image img {
+  animation: bounce 500ms ease-in 500ms 1 both;
+  width: 100%;
+  height: auto;
+}
+.section-1-container .section-1-wrapper .section-1-gifts-image {
+  bottom: 0px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+}
+.section-1-container .section-1-wrapper .section-1-gifts-image img {
+  animation: fadeIn 500ms ease-in 1s both;
+  width: 100%;
+  height: auto;
 }
 
 .section-2-container {
