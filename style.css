@@ -1,5 +1,7 @@
 .section-1-container .section-1-wrapper-mobile {
-  display: block;
+  display: grid;
+  height: 100%;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .section-1-container .section-1-wrapper-mobile {
@@ -8,13 +10,10 @@
 }
 .section-1-container .section-1-wrapper {
   display: none;
-  height: 100vh;
-  width: 100%;
   background-image: url("assets/background-images/background-image-1920_x_1080.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
 }
 @media (min-width: 768px) {
   .section-1-container .section-1-wrapper {
@@ -22,31 +21,35 @@
     justify-content: center;
   }
 }
-.section-1-container .section-1-wrapper .section-1-fully-loaded-image {
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 100%;
-  height: 60%;
-  position: absolute;
-  top: -50px;
+.section-1-container .section-1-wrapper .center-images-wrapper {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-.section-1-container .section-1-wrapper .section-1-fully-loaded-image img {
+.section-1-container .section-1-wrapper .center-images-wrapper .fully-loaded-image {
+  width: 350px;
+  position: relative;
+  top: -50px;
+}
+@media (min-width: 992px) {
+  .section-1-container .section-1-wrapper .center-images-wrapper .fully-loaded-image {
+    width: 450px;
+  }
+}
+.section-1-container .section-1-wrapper .center-images-wrapper .fully-loaded-image img {
   animation: bounce 500ms ease-in 500ms 1 both;
   width: 100%;
   height: auto;
 }
-.section-1-container .section-1-wrapper .section-1-gifts-image {
-  bottom: 0px;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  position: absolute;
+.section-1-container .section-1-wrapper .center-images-wrapper .gifts-image {
+  width: 350px;
 }
-.section-1-container .section-1-wrapper .section-1-gifts-image img {
+@media (min-width: 992px) {
+  .section-1-container .section-1-wrapper .center-images-wrapper .gifts-image {
+    width: 450px;
+  }
+}
+.section-1-container .section-1-wrapper .center-images-wrapper .gifts-image img {
   animation: fadeIn 500ms ease-in 1s both;
   width: 100%;
   height: auto;

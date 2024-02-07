@@ -1,6 +1,8 @@
 .section-1-container {
   .section-1-wrapper-mobile {
-    display: block;
+    display: grid;
+    height: 100%;
+    width: 100%;
 
     @media (min-width: 768px) {
       display: none;
@@ -9,47 +11,49 @@
 
   .section-1-wrapper {
     display: none;
-    height: 100vh;
-    width: 100%;
     background-image: url("assets/background-images/background-image-1920_x_1080.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
 
     @media (min-width: 768px) {
       display: flex;
       justify-content: center;
     }
 
-    .section-1-fully-loaded-image {
-      width: fit-content;
-      max-width: 100%;
-      height: 60%;
-      position: absolute;
-      top: -50px;
+    .center-images-wrapper {
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      align-items: center;
 
-      & img {
-        animation: bounce 500ms ease-in 500ms 1 both;
-        width: 100%;
-        height: auto;
+      .fully-loaded-image {
+        width: 350px;
+        position: relative;
+        top: -50px;
+
+        @media (min-width: 992px) {
+          width: 450px;
+        }
+
+        & img {
+          animation: bounce 500ms ease-in 500ms 1 both;
+          width: 100%;
+          height: auto;
+        }
       }
-    }
 
-    .section-1-gifts-image {
-      bottom: 0px;
-      width: fit-content;
-      height: 50%;
-      display: flex;
-      justify-content: center;
-      position: absolute;
+      .gifts-image {
+        width: 350px;
 
-      & img {
-        animation: fadeIn 500ms ease-in 1s both;
-        width: 100%;
-        height: auto;
+        @media (min-width: 992px) {
+          width: 450px;
+        }
+
+        & img {
+          animation: fadeIn 500ms ease-in 1s both;
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
