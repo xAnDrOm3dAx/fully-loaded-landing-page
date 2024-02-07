@@ -209,7 +209,7 @@
 
 // Animations
 .animate {
-  animation: fadeInAndScale 500ms 500ms both;
+  animation: fadeInAndScale 500ms 200ms both;
 }
 
 .undo-animate {
@@ -247,15 +247,6 @@
   100% {
     opacity: 1;
     transform: scale(1);
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
   }
 }
 
