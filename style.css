@@ -32,9 +32,7 @@
 }
 .section-1-container .section-1-wrapper .center-images-wrapper .fully-loaded-image {
   width: 350px;
-  position: relative;
-  top: -50px;
-  margin-bottom: -7rem;
+  margin: -5rem 0 -4rem 0;
 }
 @media (min-width: 992px) {
   .section-1-container .section-1-wrapper .center-images-wrapper .fully-loaded-image {

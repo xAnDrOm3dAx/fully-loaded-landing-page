@@ -16,7 +16,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
-
     position: relative;
 
     @media (min-width: 768px) {
@@ -33,9 +32,7 @@
 
       .fully-loaded-image {
         width: 350px;
-        position: relative;
-        top: -50px;
-        margin-bottom: -7rem;
+        margin: -5rem 0 -4rem 0;
 
         @media (min-width: 992px) {
           width: 450px;
