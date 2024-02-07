@@ -23,6 +23,12 @@
       justify-content: center;
     }
 
+    canvas {
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+    }
+
     .center-images-wrapper {
       display: flex;
       flex-direction: column;
@@ -68,6 +74,7 @@
       width: 1300px;
       position: absolute;
       bottom: 0px;
+      z-index: 0;
 
       .gifts-image-right {
         transform: rotateY(180deg);

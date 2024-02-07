@@ -23,6 +23,11 @@
     justify-content: center;
   }
 }
+.section-1-container .section-1-wrapper canvas {
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+}
 .section-1-container .section-1-wrapper .center-images-wrapper {
   display: flex;
   flex-direction: column;
@@ -64,6 +69,7 @@
   width: 1300px;
   position: absolute;
   bottom: 0px;
+  z-index: 0;
 }
 .section-1-container .section-1-wrapper .gifts-images-wrapper .gifts-image-right {
   transform: rotateY(180deg);
@@ -250,4 +256,4 @@
   100% {
     transform: translateX(0px);
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
