@@ -16,6 +16,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    position: relative;
+
     @media (min-width: 768px) {
       display: flex;
       justify-content: center;
@@ -25,11 +27,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      z-index: 1;
 
       .fully-loaded-image {
         width: 350px;
         position: relative;
         top: -50px;
+        margin-bottom: -7rem;
 
         @media (min-width: 992px) {
           width: 450px;
@@ -43,10 +47,10 @@
       }
 
       .gifts-image {
-        width: 350px;
+        width: 400px;
 
         @media (min-width: 992px) {
-          width: 450px;
+          width: 500px;
         }
 
         & img {
@@ -54,6 +58,21 @@
           width: 100%;
           height: auto;
         }
+      }
+    }
+
+    .present-images-wrapper {
+      display: flex;
+      height: auto;
+      width: 1300px;
+      position: absolute;
+      bottom: 0px;
+
+      .presents-image-left {
+      }
+
+      .presents-image-right {
+        transform: rotateY(180deg);
       }
     }
   }
