@@ -152,3 +152,32 @@ const loop = function () {
 };
 
 window.onload = loop;
+
+// Slider Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+// Parallax Images
+function getParallaxImages() {
+  var images = document.querySelectorAll(".Parallax img");
+  new simpleParallax(images, {
+    scale: 1.1,
+    delay: 1.3,
+    transition: "cubic-bezier(0,0,0,1)",
+  });
+}
+getParallaxImages();
