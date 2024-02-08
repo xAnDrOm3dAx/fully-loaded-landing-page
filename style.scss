@@ -11,7 +11,7 @@
 
   .section-1-wrapper {
     display: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-1920_x_1080.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-2560_x_1440.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,16 +33,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      z-index: 1;
+      z-index: 10;
       overflow: hidden;
 
       .fully-loaded-image {
-        width: 300px;
-        margin: -5rem 0 -4rem 0;
-
-        @media (min-width: 992px) {
-          width: 400px;
-        }
+        width: 400px;
+        margin: -5rem 0 -3rem 0;
 
         & img {
           animation: bounce 500ms ease-in 500ms 1 both;
@@ -52,23 +48,19 @@
       }
 
       .gift-bag-image {
-        width: 350px;
+        width: 450px;
         position: relative;
         bottom: -5px;
 
-        @media (min-width: 992px) {
-          width: 450px;
-        }
-
         & img {
-          // animation: fadeIn 500ms ease-in 1s both;
+          animation: fadeIn 500ms ease-in 1s both;
           width: 100%;
           height: auto;
         }
       }
     }
 
-    .gifts-images-wrapper {
+    .surrounding-images-wrapper {
       display: flex;
       height: auto;
       width: 1300px;
@@ -78,6 +70,45 @@
 
       .gifts-image-right {
         transform: rotateY(180deg);
+      }
+
+      .surfboard-image {
+        position: absolute;
+        bottom: 194px;
+        left: 815px;
+        z-index: -1;
+        width: 141px;
+
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .santa-image {
+        position: absolute;
+        bottom: 213px;
+        right: 811px;
+        z-index: -1;
+        width: 386px;
+
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      .snowman-image {
+        position: absolute;
+        bottom: 155px;
+        left: 827px;
+        z-index: -1;
+        width: 337px;
+
+        & img {
+          width: 100%;
+          height: auto;
+        }
       }
     }
   }
