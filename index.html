@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <link rel="stylesheet" type="text/css" media="all" href="./style.css" />
   <!-- temp links -->
   <link rel="stylesheet" type="text/css" media="all"
     href="https://shop.sherriff.com.au/_ui/responsive/theme-scaffold/css/variables/global.css" />
@@ -14,11 +15,14 @@
     href="https://shop.sherriff.com.au/_ui/responsive/theme-scaffold/scss/scaffold/style.css" />
   <link rel="stylesheet" type="text/css" media="all"
     href="https://shop.sherriff.com.au/_ui/responsive/theme-scaffold/css/theme-custom/sherriff/style.css" />
-  <link rel="stylesheet" type="text/css" media="all" href="./style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Squada+One" />
   <link rel="stylesheet" type="text/css" href="https://shop.cnw.com.au/_ui/responsive/common/css/reset.css" />
+  <link type="text/css" rel="stylesheet"
+    href="https://shop.cnw.com.au/_ui/responsive/common/js/swiper-bundle.min.css" />
+
+
 </head>
 
 <body id="sheBody">
@@ -70,7 +74,7 @@
 
       <div class="section-2-wrapper-mobile">
         <div class="section-2-header-image-mobile">
-          <img src="assets/section-2/tiers-placeholder-preliminary.png" alt="Banner">
+          <img src="assets/section-2/spend-claim-enjoy-cropped.png" alt="Banner">
         </div>
       </div>
 
@@ -97,6 +101,15 @@
     <section class="section-3-container">
       <div class="section-3-wrapper">
         <h2>Prize Pool slider</h2>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1</div>
+            <div class="swiper-slide">Slide 2</div>
+            <div class="swiper-slide">Slide 3</div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
       </div>
     </section>
 
@@ -136,23 +149,14 @@
     </section>
 
   </section>
-  <!-- temp links-->
+
+  <!-- temp scripts-->
   <script type="text/javascript"
     src="https://shop.sherriff.com.au/_ui/responsive/common/js/simpleParallax.min.js"></script>
   <script type="text/javascript"
     src="https://shop.sherriff.com.au/_ui/responsive/common/js/scaffold/slider.js"></script>
-  <script>
-    // Parallax Images
-    function getParallaxImages() {
-      var images = document.querySelectorAll(".Parallax img");
-      new simpleParallax(images, {
-        scale: 1.1,
-        delay: 1.3,
-        transition: "cubic-bezier(0,0,0,1)",
-      });
-    }
-    getParallaxImages();
-  </script>
+  <script type="text/javascript" src="https://shop.cnw.com.au/_ui/responsive/common/js/swiper-bundle.min.js"></script>
+  <!-- main js -->
   <script src="./main.js"></script>
 </body>
 
