@@ -116,17 +116,18 @@
 
 .section-2-container {
   background-color: #1d304c;
-  background-image: url(assets/background-images/section-2-background-blurred.jpg);
-  background-position: center;
+  background-image: url(assets/background-images/snow-background-3.jpeg);
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  // background-attachment: fixed;
   display: flex;
   justify-content: center;
-  background-attachment: fixed;
+  padding: 0 var(--gutter);
 
   .section-2-wrapper-mobile {
     display: block;
-    padding: 0 var(--gutter) var(--gutter);
+    padding: 0 0 var(--gutter);
     max-width: 768px;
 
     @media (min-width: 768px) {
@@ -135,11 +136,11 @@
   }
 
   .section-2-wrapper {
+    margin: 0 var(--gutter);
     display: none;
     flex-direction: column;
     align-items: center;
-    padding: 0 var(--gutter) var(--gutter);
-    max-width: 768px;
+    max-width: 700px;
     position: relative;
 
     @media (min-width: 768px) {
@@ -160,7 +161,7 @@
 
       &.pool-2 {
         position: relative;
-        top: -26px;
+        top: -30px;
         left: 20px;
         z-index: 8;
         // animation: slideLeft 500ms ease-in 1;
@@ -168,9 +169,9 @@
 
       &.pool-3 {
         position: relative;
-        top: -30px;
+        top: -36px;
         right: 26px;
-        z-index: 8;
+        z-index: 7;
         // animation: slideRight 500ms ease-in 1;
       }
     }
@@ -209,19 +210,23 @@
 
 .section-5-container {
   background-color: #1d304c;
-  background-image: url(assets/background-images/section-2-background-blurred.jpg);
+  background-image: url(assets/background-images/snow-background-2.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: var(--gutter);
   display: flex;
   justify-content: center;
 
   .section-5-wrapper {
+    background: rgba(67, 80, 97, 0.67);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    padding: var(--gutter);
     display: flex;
     flex-direction: column;
-    gap: var(--gutter);
+    gap: var(--gutter-half);
     max-width: 250px;
 
     @media (min-width: 480px) {
@@ -260,11 +265,12 @@
     .logos {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      gap: var(--gutter-half);
       align-items: center;
 
       @media (min-width: 480px) {
         flex-direction: row;
+        gap: var(--gutter);
       }
 
       .clipsal-logo {
