@@ -120,10 +120,13 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
   padding: 0 var(--gutter);
+
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
 
   .section-2-wrapper-mobile {
     display: block;
@@ -190,6 +193,7 @@
       font-size: 18px;
       background: #fff;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
 
