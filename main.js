@@ -17,7 +17,7 @@ const observer = new IntersectionObserver(
   }
 );
 
-const tags = document.querySelectorAll(".tier-1, .tier-2, .tier-3");
+const tags = document.querySelectorAll(".pool-1, .pool-2, .pool-3");
 
 tags.forEach((tag) => {
   observer.observe(tag);
