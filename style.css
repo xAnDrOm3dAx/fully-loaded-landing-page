@@ -1,3 +1,6 @@
+.section-1-container {
+  border-bottom: 3px solid var(--color-border);
+}
 .section-1-container .section-1-wrapper-mobile {
   display: grid;
   height: 100%;
@@ -27,6 +30,7 @@
   overflow: hidden;
   position: absolute;
   z-index: 1;
+  height: 100%;
 }
 .section-1-container .section-1-wrapper .center-images-wrapper {
   display: flex;
@@ -100,6 +104,7 @@
 }
 
 .section-2-container {
+  border-bottom: 3px solid var(--color-border);
   background-color: #1d304c;
   background-image: url(assets/background-images/snow-background-3.jpeg);
   background-position: center top;
@@ -159,12 +164,13 @@
 }
 
 .section-3-container {
+  border-bottom: 3px solid var(--color-border);
   background-color: rgb(138, 162, 240);
-  height: 600px;
 }
 .section-3-container .swiper {
   width: 100%;
   height: 100%;
+  max-width: var(--width-max);
 }
 .section-3-container .swiper .swiper-slide {
   text-align: center;
@@ -191,6 +197,7 @@
 }
 
 .section-4-container {
+  border-bottom: 3px solid var(--color-border);
   background-color: rgb(238, 166, 232);
   height: 600px;
 }
