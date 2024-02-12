@@ -156,7 +156,7 @@ window.onload = loop;
 // Slider Swiper
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 19,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
