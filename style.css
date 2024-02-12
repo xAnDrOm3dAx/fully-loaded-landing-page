@@ -185,13 +185,23 @@
 }
 .section-2-container .section-2-wrapper .swiper .swiper-slide .header-image {
   width: 100%;
-  max-width: 220px;
+  max-width: 140px;
   height: auto;
+}
+@media (min-width: 480px) {
+  .section-2-container .section-2-wrapper .swiper .swiper-slide .header-image {
+    max-width: 240px;
+  }
 }
 .section-2-container .section-2-wrapper .swiper .swiper-slide .prize-image {
   width: 100%;
-  max-width: 240px;
+  max-width: 140px;
   height: auto;
+}
+@media (min-width: 480px) {
+  .section-2-container .section-2-wrapper .swiper .swiper-slide .prize-image {
+    max-width: 240px;
+  }
 }
 .section-2-container .section-2-wrapper .swiper .swiper-slide img {
   display: block;

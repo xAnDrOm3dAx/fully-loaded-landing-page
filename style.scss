@@ -212,15 +212,23 @@
         .header-image {
           // width: 200px;
           width: 100%;
-          max-width: 220px;
+          max-width: 140px;
           height: auto;
+
+          @media (min-width: 480px) {
+            max-width: 240px;
+          }
         }
 
         .prize-image {
           // width: 200px;
           width: 100%;
-          max-width: 240px;
+          max-width: 140px;
           height: auto;
+
+          @media (min-width: 480px) {
+            max-width: 240px;
+          }
         }
 
         .swiper-button-next {
