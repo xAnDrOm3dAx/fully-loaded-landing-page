@@ -243,7 +243,8 @@
   background-color: #dce1e4;
 
   .entry-points-wrapper {
-    max-width: var(--width-max);
+    // max-width: var(--width-max);
+    max-width: 800px;
     margin: 0 auto;
 
     .fully-loaded-points {
@@ -290,8 +291,8 @@
     }
 
     .fully-loaded-spinner {
-      display: none;
-      // display: block;
+      // display: none;
+      display: block;
       width: 50px;
       height: 50px;
       margin: 0 auto;
@@ -308,15 +309,36 @@
       animation: fullyLoadedSpinner 0.6s ease infinite;
     }
 
+    // .fully-loaded-buttons {
+    //   width: 100%;
+    //   padding: var(--gutter);
+    //   display: grid;
+    //   grid-template-columns: repeat(2, 1fr);
+    //   gap: 0.75rem;
+
+    //   .btn-reload,
+    //   .btn-redeem {
+    //     background-color: var(--color-black);
+    //     color: var(--_accent);
+
+    //     &:hover {
+    //       background-color: var(--_accent);
+    //       color: var(--color-black);
+    //     }
+    //   }
+    // }
+
     .fully-loaded-buttons {
       width: 100%;
-      padding: var(--gutter);
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      padding: 0 var(--gutter);
+      display: flex;
+      flex-wrap: wrap;
       gap: 0.75rem;
 
       .btn-reload,
       .btn-redeem {
+        flex: 1;
+        min-width: 150px;
         background-color: var(--color-black);
         color: var(--_accent);
 
@@ -328,12 +350,16 @@
     }
 
     .fully-loaded-redeem-form {
-      display: none;
-      // display: block;
+      // display: none;
+      display: block;
       margin: 0 auto;
+      max-width: 500px;
       width: 100%;
+      padding: 0 var(--gutter);
 
       & h2 {
+        font-size: 1.3rem;
+        text-align: center;
         margin: var(--gutter-half) auto;
       }
     }
@@ -376,7 +402,7 @@
       color: var(--color-black);
     }
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
       .fully-loaded-points {
         width: fit-content;
       }
@@ -386,11 +412,11 @@
       }
 
       .fully-loaded-redeem-form {
-        width: fit-content;
+        // width: fit-content;
       }
 
       .fully-loaded-redeem-form form {
-        min-width: 500px;
+        // min-width: 500px;
       }
     }
   }
