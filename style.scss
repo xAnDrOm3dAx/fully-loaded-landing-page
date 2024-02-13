@@ -1,3 +1,4 @@
+// Section 1
 .section-1-container {
   border-bottom: 3px solid var(--color-border);
 
@@ -119,6 +120,7 @@
   }
 }
 
+// Section 2
 .section-2-container {
   background-color: #1d304c;
   background-image: url(assets/background-images/snow-background-3.jpeg);
@@ -189,7 +191,6 @@
     .swiper {
       width: 100%;
       height: 100%;
-      width: 100%;
       max-width: var(--width-max);
       padding: 0 0 var(--gutter);
 
@@ -208,11 +209,11 @@
 
         .header-image {
           width: 100%;
-          max-width: 140px;
+          max-width: 120px;
           height: auto;
 
           @media (min-width: 480px) {
-            max-width: 240px;
+            max-width: 190px;
           }
         }
 
@@ -237,12 +238,165 @@
   }
 }
 
+// Section 3 - Bongo
 .section-3-container {
-  // border-bottom: 3px solid var(--color-border);
-  // background-color: rgb(238, 166, 232);
-  // height: 600px;
+  background-color: #dce1e4;
+
+  .entry-points-wrapper {
+    max-width: var(--width-max);
+    margin: 0 auto;
+
+    .fully-loaded-points {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .account-name.logged-out span {
+      background: transparent;
+    }
+
+    .account-name span {
+      display: flex;
+      justify-content: center;
+      padding: 0.55rem;
+      font-weight: 600;
+      font-size: 1rem;
+      background: #eee;
+    }
+
+    .account-data-row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    .account-data-row span:first-child {
+      font-weight: 600;
+    }
+
+    .account-data-row span {
+      flex: 1 0 auto;
+      width: 100%;
+      max-width: 50%;
+      padding: 0.55rem;
+      word-break: break-word;
+    }
+
+    .account-data-row:last-child span:last-child {
+      font-weight: 600;
+      color: #c00;
+    }
+
+    .fully-loaded-spinner {
+      display: none;
+      // display: block;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 3px solid;
+      border-color: #fed105 transparent transparent;
+      filter: hue-rotate(0deg);
+      transform: rotate(0deg);
+      transition: 0.5s ease;
+    }
+
+    .active-spinner {
+      display: block;
+      animation: fullyLoadedSpinner 0.6s ease infinite;
+    }
+
+    .fully-loaded-buttons {
+      width: 100%;
+      padding: var(--gutter);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+
+      .btn-reload,
+      .btn-redeem {
+        background-color: var(--color-black);
+        color: var(--_accent);
+
+        &:hover {
+          background-color: var(--_accent);
+          color: var(--color-black);
+        }
+      }
+    }
+
+    .fully-loaded-redeem-form {
+      display: none;
+      // display: block;
+      margin: 0 auto;
+      width: 100%;
+
+      & h2 {
+        margin: var(--gutter-half) auto;
+      }
+    }
+
+    .fully-loaded-redeem-form.active-form {
+      display: block;
+    }
+
+    .fully-loaded-redeem-form .form-row {
+      display: -ms-flex;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .fully-loaded-redeem-form .form-row label {
+      font-weight: 600;
+    }
+
+    .fully-loaded-redeem-form .form-row label,
+    .fully-loaded-redeem-form .form-row input[type="text"] {
+      margin: 0.35rem;
+    }
+
+    .fully-loaded-redeem-form .form-buttons {
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      padding: var(--gutter);
+    }
+
+    .form-buttons button[type="submit"] {
+      background-color: var(--color-black);
+      color: var(--_accent);
+      border: 0;
+    }
+
+    .form-buttons button[type="submit"]:hover {
+      background-color: var(--_accent);
+      color: var(--color-black);
+    }
+
+    @media (min-width: 767px) {
+      .fully-loaded-points {
+        width: fit-content;
+      }
+
+      .account-name span {
+        min-width: 500px;
+      }
+
+      .fully-loaded-redeem-form {
+        width: fit-content;
+      }
+
+      .fully-loaded-redeem-form form {
+        min-width: 500px;
+      }
+    }
+  }
 }
 
+// Section 4
 .section-4-container {
   background-color: #1d304c;
   background-image: url(assets/background-images/snow-background-2.jpeg);
@@ -293,7 +447,14 @@
 
         button {
           width: 100%;
+          background-color: var(--color-black);
           color: var(--_accent);
+          border: 0;
+
+          &:hover {
+            background-color: var(--_accent);
+            color: var(--color-black);
+          }
         }
       }
     }
@@ -329,7 +490,6 @@
   opacity: 0;
 }
 
-// Keyframes
 @keyframes bounce {
   0% {
     transform: translateY(-600px);
@@ -363,6 +523,18 @@
   }
 }
 
+@keyframes fullyLoadedSpinner {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
 // @keyframes slideRight {
 //   0% {
 //     transform: translateX(-2000px);
@@ -386,150 +558,3 @@
 //     transform: translateX(0px);
 //   }
 // }
-
-// From BM
-
-.fully-loaded-points {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.account-name.logged-out span {
-  background: transparent;
-}
-
-.account-name span {
-  display: flex;
-  justify-content: center;
-  padding: 0.55rem;
-  font-weight: 600;
-  font-size: 1rem;
-  background: #eee;
-}
-
-.account-data-row {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-
-.account-data-row span:first-child {
-  font-weight: 600;
-}
-
-.account-data-row span {
-  flex: 1 0 auto;
-  width: 100%;
-  max-width: 50%;
-  padding: 0.55rem;
-  word-break: break-word;
-}
-
-.account-data-row:last-child span:last-child {
-  font-weight: 600;
-  color: #c00;
-}
-
-.fully-loaded-spinner {
-  // display: none;
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 3px solid;
-  border-color: #fed105 transparent transparent;
-  filter: hue-rotate(0deg);
-  transform: rotate(0deg);
-  transition: 0.5s ease;
-}
-
-.active-spinner {
-  display: block;
-  animation: fullyLoadedSpinner 0.6s ease infinite;
-}
-
-.fully-loaded-buttons {
-  width: 100%;
-  margin: 1.8rem auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.75rem;
-}
-
-.fully-loaded-redeem-form {
-  // display: none;
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.fully-loaded-redeem-form.active-form {
-  display: block;
-}
-
-.fully-loaded-redeem-form .form-row {
-  display: -ms-flex;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
-.fully-loaded-redeem-form .form-row label {
-  font-weight: 600;
-}
-
-.fully-loaded-redeem-form .form-row label,
-.fully-loaded-redeem-form .form-row input[type="text"] {
-  margin: 0.35rem;
-}
-
-.fully-loaded-redeem-form .form-buttons {
-  display: -ms-flex;
-  display: flex;
-  justify-content: center;
-  margin: 1.5rem auto;
-}
-
-.form-buttons button[type="submit"] {
-  background: #222;
-  border: 0;
-}
-
-.form-buttons button[type="submit"]:hover {
-  background: #fed105;
-  color: #222;
-}
-
-@media (min-width: 767px) {
-  /*
-  .fully-loaded-points {
-      width: fit-content;
-  }
-
-  .account-name span {
-      min-width: 500px;
-  }
-
-  .fully-loaded-redeem-form {
-      width: fit-content;
-  }
-
-  .fully-loaded-redeem-form form {
-      min-width: 500px;
-  }*/
-}
-
-@keyframes fullyLoadedSpinner {
-  0% {
-    filter: hue-rotate(0deg);
-    transform: rotate(0deg);
-  }
-
-  100% {
-    filter: hue-rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
