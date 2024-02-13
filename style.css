@@ -1,5 +1,5 @@
 .section-1-container {
-  border-bottom: 3px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   background-color: #dce1e4;
 }
 .section-1-container .section-1-hero-wrapper-mobile {
@@ -106,6 +106,7 @@
 }
 
 .section-2-container {
+  border-bottom: 2px solid var(--color-border);
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-3.jpeg);
   background-position: center top;
@@ -213,6 +214,7 @@
 }
 
 .section-3-container {
+  border-bottom: 2px solid var(--color-border);
   background-color: #dce1e4;
 }
 .section-3-container .entry-points-wrapper {

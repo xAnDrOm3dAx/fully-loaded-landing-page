@@ -1,6 +1,6 @@
 // Section 1
 .section-1-container {
-  border-bottom: 3px solid var(--color-border);
+  border-bottom: 2px solid var(--color-border);
   background-color: #dce1e4;
 
   .section-1-hero-wrapper-mobile {
@@ -123,6 +123,8 @@
 
 // Section 2
 .section-2-container {
+  border-bottom: 2px solid var(--color-border);
+
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-3.jpeg);
   background-position: center top;
@@ -241,6 +243,8 @@
 
 // Section 3 - Bongo
 .section-3-container {
+  border-bottom: 2px solid var(--color-border);
+
   background-color: #dce1e4;
 
   .entry-points-wrapper {
