@@ -181,3 +181,11 @@ function getParallaxImages() {
   });
 }
 getParallaxImages();
+
+// Redeem Points Section
+
+const redeemEntries = document.querySelector(".btn-redeem");
+const redeemForm = document.querySelector(".fully-loaded-redeem-form");
+redeemEntries.addEventListener("click", () => {
+  redeemForm.style.display = "block";
+});
