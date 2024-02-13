@@ -213,10 +213,7 @@
      object-fit: cover;
 }
 
-.section-3-container {
-  border-bottom: 3px solid var(--color-border);
-}
-.section-5-container {
+.section-4-container {
   background-color: #1d304c;
   background-image: url(assets/background-images/snow-background-2.jpeg);
   background-position: center;
@@ -226,7 +223,7 @@
   display: flex;
   justify-content: center;
 }
-.section-5-container .section-5-wrapper {
+.section-4-container .section-4-wrapper {
   background: rgba(67, 80, 97, 0.67);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(4.8px);
@@ -237,11 +234,11 @@
   gap: var(--gutter-half);
 }
 @media (min-width: 480px) {
-  .section-5-container .section-5-wrapper {
+  .section-4-container .section-4-wrapper {
     max-width: 768px;
   }
 }
-.section-5-container .section-5-wrapper .button-links {
+.section-4-container .section-4-wrapper .button-links {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,12 +246,12 @@
   gap: var(--gutter-half);
 }
 @media (min-width: 480px) {
-  .section-5-container .section-5-wrapper .button-links {
+  .section-4-container .section-4-wrapper .button-links {
     flex-direction: row;
   }
 }
-.section-5-container .section-5-wrapper .button-links .btn-group-1,
-.section-5-container .section-5-wrapper .button-links .btn-group-2 {
+.section-4-container .section-4-wrapper .button-links .btn-group-1,
+.section-4-container .section-4-wrapper .button-links .btn-group-2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -262,32 +259,32 @@
   width: 100%;
 }
 @media (min-width: 768px) {
-  .section-5-container .section-5-wrapper .button-links .btn-group-1,
-  .section-5-container .section-5-wrapper .button-links .btn-group-2 {
+  .section-4-container .section-4-wrapper .button-links .btn-group-1,
+  .section-4-container .section-4-wrapper .button-links .btn-group-2 {
     flex-wrap: nowrap;
   }
 }
-.section-5-container .section-5-wrapper .button-links .btn-group-1 button,
-.section-5-container .section-5-wrapper .button-links .btn-group-2 button {
+.section-4-container .section-4-wrapper .button-links .btn-group-1 button,
+.section-4-container .section-4-wrapper .button-links .btn-group-2 button {
   width: 100%;
   color: var(--_accent);
 }
-.section-5-container .section-5-wrapper .logos {
+.section-4-container .section-4-wrapper .logos {
   display: flex;
   flex-direction: column;
   gap: var(--gutter-half);
   align-items: center;
 }
 @media (min-width: 480px) {
-  .section-5-container .section-5-wrapper .logos {
+  .section-4-container .section-4-wrapper .logos {
     flex-direction: row;
     gap: var(--gutter);
   }
 }
-.section-5-container .section-5-wrapper .logos .clipsal-logo {
+.section-4-container .section-4-wrapper .logos .clipsal-logo {
   flex: 2;
 }
-.section-5-container .section-5-wrapper .logos .sherrif-logo {
+.section-4-container .section-4-wrapper .logos .sherrif-logo {
   flex: 1;
 }
 

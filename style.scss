@@ -238,19 +238,12 @@
 }
 
 .section-3-container {
-  border-bottom: 3px solid var(--color-border);
-
-  .section-3-wrapper {
-  }
-}
-
-.section-4-container {
   // border-bottom: 3px solid var(--color-border);
   // background-color: rgb(238, 166, 232);
   // height: 600px;
 }
 
-.section-5-container {
+.section-4-container {
   background-color: #1d304c;
   background-image: url(assets/background-images/snow-background-2.jpeg);
   background-position: center;
@@ -260,7 +253,7 @@
   display: flex;
   justify-content: center;
 
-  .section-5-wrapper {
+  .section-4-wrapper {
     background: rgba(67, 80, 97, 0.67);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.8px);
