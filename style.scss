@@ -1,4 +1,4 @@
-// Section 1
+// Hero
 .section-1-container {
   border-bottom: 2px solid var(--color-border);
   background-color: #dce1e4;
@@ -121,7 +121,7 @@
   }
 }
 
-// Section 2
+// Pools
 .section-2-container {
   border-bottom: 2px solid var(--color-border);
 
@@ -241,7 +241,7 @@
   }
 }
 
-// Section 3 - Bongo
+// Account Info & Points Redemption
 .section-3-container {
   border-bottom: 2px solid var(--color-border);
 
@@ -251,6 +251,7 @@
     // max-width: var(--width-max);
     max-width: 800px;
     margin: 0 auto;
+    padding: var(--gutter);
 
     .fully-loaded-points {
       width: 100%;
@@ -296,8 +297,8 @@
     }
 
     .fully-loaded-spinner {
-      // display: none;
-      display: block;
+      display: none;
+      // display: block;
       width: 50px;
       height: 50px;
       margin: 0 auto;
@@ -335,7 +336,6 @@
 
     .fully-loaded-buttons {
       width: 100%;
-      padding: 0 var(--gutter);
       display: flex;
       flex-wrap: wrap;
       gap: 0.75rem;
@@ -355,8 +355,8 @@
     }
 
     .fully-loaded-redeem-form {
-      // display: none;
-      display: block;
+      display: none;
+      // display: block;
       margin: 0 auto;
       max-width: 500px;
       width: 100%;
@@ -389,20 +389,20 @@
       margin: 0.35rem;
     }
 
-    .fully-loaded-redeem-form .form-buttons {
+    .fully-loaded-redeem-form .form-button {
       display: -ms-flex;
       display: flex;
       justify-content: center;
-      padding: var(--gutter);
+      margin: var(--gutter) 0 0;
     }
 
-    .form-buttons button[type="submit"] {
+    .form-button button[type="submit"] {
       background-color: var(--color-black);
       color: var(--_accent);
       border: 0;
     }
 
-    .form-buttons button[type="submit"]:hover {
+    .form-button button[type="submit"]:hover {
       background-color: var(--_accent);
       color: var(--color-black);
     }
@@ -427,7 +427,7 @@
   }
 }
 
-// Section 4
+// Footer
 .section-4-container {
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-2.jpeg);

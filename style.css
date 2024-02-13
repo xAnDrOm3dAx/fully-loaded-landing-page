@@ -220,6 +220,7 @@
 .section-3-container .entry-points-wrapper {
   max-width: 800px;
   margin: 0 auto;
+  padding: var(--gutter);
 }
 .section-3-container .entry-points-wrapper .fully-loaded-points {
   width: 100%;
@@ -258,7 +259,7 @@
   color: #c00;
 }
 .section-3-container .entry-points-wrapper .fully-loaded-spinner {
-  display: block;
+  display: none;
   width: 50px;
   height: 50px;
   margin: 0 auto;
@@ -275,7 +276,6 @@
 }
 .section-3-container .entry-points-wrapper .fully-loaded-buttons {
   width: 100%;
-  padding: 0 var(--gutter);
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
@@ -293,7 +293,7 @@
   color: var(--color-black);
 }
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form {
-  display: block;
+  display: none;
   margin: 0 auto;
   max-width: 500px;
   width: 100%;
@@ -319,18 +319,18 @@
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row input[type=text] {
   margin: 0.35rem;
 }
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-buttons {
+.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-button {
   display: -ms-flex;
   display: flex;
   justify-content: center;
-  padding: var(--gutter);
+  margin: var(--gutter) 0 0;
 }
-.section-3-container .entry-points-wrapper .form-buttons button[type=submit] {
+.section-3-container .entry-points-wrapper .form-button button[type=submit] {
   background-color: var(--color-black);
   color: var(--_accent);
   border: 0;
 }
-.section-3-container .entry-points-wrapper .form-buttons button[type=submit]:hover {
+.section-3-container .entry-points-wrapper .form-button button[type=submit]:hover {
   background-color: var(--_accent);
   color: var(--color-black);
 }
