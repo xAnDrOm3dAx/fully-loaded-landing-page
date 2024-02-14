@@ -248,8 +248,7 @@
   background-color: #ececec;
 
   .entry-points-wrapper {
-    // max-width: var(--width-max);
-    max-width: 800px;
+    max-width: calc(800px + 2rem * 2);
     margin: 0 auto;
     padding: var(--gutter);
 
@@ -338,7 +337,7 @@
       width: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap: 0.75rem;
+      gap: var(--gutter-half);
 
       .btn-reload,
       .btn-redeem {
