@@ -392,8 +392,9 @@
       margin: 0 0 0.35rem;
     }
 
-    #error-message {
-      // margin: 2rem 0 0;
+    #error-message-email,
+    #error-message-phone {
+      margin: 0.5rem 0 0;
       text-align: center;
     }
 

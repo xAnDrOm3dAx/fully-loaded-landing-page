@@ -172,11 +172,13 @@
             <div class="form-row">
               <label>Email</label>
               <input type="text" id="user-email" name="redeemEmail" placeholder="Your email address...">
+              <div id="error-message-email"></div> <!-- Placeholder for email error message -->
             </div>
 
             <div class="form-row">
               <label>Phone</label>
-              <input type="text" name="redeemPhone">
+              <input type="text" id="user-phone" name="redeemPhone" placeholder="Your phone number...">
+              <div id="error-message-phone"></div> <!-- Placeholder for phone error message -->
             </div>
 
             <div class="form-row">
@@ -184,7 +186,8 @@
               <input type="text" name="redeemEntryPoints" disabled="disabled" readonly>
             </div>
 
-            <div id="error-message"></div> <!-- Placeholder for error message -->
+            <!-- <div id="error-message-email"></div> Placeholder for email error message -->
+            <!-- <div id="error-message-phone"></div> Placeholder for phone error message -->
 
             <div class="form-button">
               <button type="submit" id="submit-btn">Redeem Prize</button>

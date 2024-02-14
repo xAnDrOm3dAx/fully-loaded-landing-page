@@ -192,44 +192,165 @@ redeemEntries.addEventListener("click", () => {
 
 // Email Validation
 const emailInput = document.querySelector("#user-email");
+const phoneInput = document.querySelector("#user-phone");
 const submitBtn = document.querySelector("#submit-btn");
-const errorMessage = document.querySelector("#error-message");
+// const errorMessage = document.querySelector("#error-message");
+const errorMessageEmail = document.querySelector("#error-message-email");
+const errorMessagePhone = document.querySelector("#error-message-phone");
 
 submitBtn.addEventListener("click", (event) => {
   event.preventDefault();
   validateEmail();
+  validatePhone();
 });
 
 function validateEmail() {
-  const userEmail = emailInput.value.trim(); /* Trim whitespace from the input */
-
-  /* Regular expression for basic email validation */
+  const userEmail = emailInput.value.trim();
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (userEmail === "") {
-    displayError("Whoops! It looks like you forgot to add your email");
+    displayEmailError("Whoops! It looks like you forgot to add your email");
   } else if (!emailRegex.test(userEmail)) {
-    displayError("Please provide a valid email address");
+    displayEmailError("Please provide a valid email address");
   } else {
-    clearError();
+    clearEmailError();
   }
-  /* Change the placeholder text */
-  emailInput.value = "";
 }
 
-/* Add input event listener to clear error on user input */
-emailInput.addEventListener("input", clearError);
+function validatePhone() {
+  const userPhone = phoneInput.value.trim();
+  const phoneRegex = /^\d{10}$/; // Adjust regex according to your phone number format
 
-function displayError(message) {
-  /* emailInput.classList.add("error"); */
-  errorMessage.textContent = message;
-  /* emailInput.style.border = "1px solid var(--color-alert-error--dark"; */
+  if (userPhone === "") {
+    displayPhoneError("Whoops! It looks like you forgot to add your phone number");
+  } else if (!phoneRegex.test(userPhone)) {
+    displayPhoneError("Please provide a valid phone number");
+  } else {
+    clearPhoneError();
+  }
+}
+
+function displayEmailError(message) {
+  errorMessageEmail.textContent = message;
   emailInput.placeholder = "example@example.com";
 }
 
-function clearError() {
-  /* emailInput.classList.remove("error"); */
-  errorMessage.textContent = "";
-  /* emailInput.style.border = "1px solid var(--color-alert-info--dark)"; */
+function clearEmailError() {
+  errorMessageEmail.textContent = "";
   emailInput.placeholder = "Your email address...";
 }
+
+function displayPhoneError(message) {
+  errorMessagePhone.textContent = message;
+  phoneInput.placeholder = "1234567890"; // Adjust placeholder according to your phone number format
+}
+
+function clearPhoneError() {
+  errorMessagePhone.textContent = "";
+  phoneInput.placeholder = "Your phone number...";
+}
+
+// WITH PHONE
+
+// submitBtn.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   validateEmail();
+//   validatePhone();
+// });
+
+// function validateEmail() {
+//   const userEmail = emailInput.value.trim(); /* Trim whitespace from the input */
+
+//   /* Regular expression for basic email validation */
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+//   if (userEmail === "") {
+//     displayError("Whoops! It looks like you forgot to add your email");
+//   } else if (!emailRegex.test(userEmail)) {
+//     displayError("Please provide a valid email address");
+//   } else {
+//     clearError();
+//   }
+//   /* Change the placeholder text */
+//   emailInput.value = "";
+// }
+
+// function validatePhone() {
+//   const userPhone = phoneInput.value.trim(); /* Trim whitespace from the input */
+
+//   /* Regular expression for basic phone number validation */
+//   const phoneRegex = /^\d{10}$/; // Assuming 10-digit phone number without any special characters
+
+//   if (userPhone === "") {
+//     displayError("Whoops! It looks like you forgot to add your phone number");
+//   } else if (!phoneRegex.test(userPhone)) {
+//     displayError("Please provide a valid phone number");
+//   } else {
+//     clearError();
+//   }
+//   /* Change the placeholder text */
+//   phoneInput.value = "";
+// }
+
+// /* Add input event listener to clear error on email and phone input */
+// emailInput.addEventListener("input", clearError);
+// phoneInput.addEventListener("input", clearError);
+
+// function displayError(message) {
+//   /* emailInput.classList.add("error"); */
+//   errorMessage.textContent = message;
+//   /* emailInput.style.border = "1px solid var(--color-alert-error--dark"; */
+//   emailInput.placeholder = "example@example.com";
+// }
+
+// function clearError() {
+//   /* emailInput.classList.remove("error"); */
+//   errorMessage.textContent = "";
+//   /* emailInput.style.border = "1px solid var(--color-alert-info--dark)"; */
+//   emailInput.placeholder = "Your email address...";
+// }
+
+// ORIGINAL WITHOUT PHONE
+// // Email Validation
+// const emailInput = document.querySelector("#user-email");
+// const submitBtn = document.querySelector("#submit-btn");
+// const errorMessage = document.querySelector("#error-message");
+
+// submitBtn.addEventListener("click", (event) => {
+//   event.preventDefault();
+//   validateEmail();
+// });
+
+// function validateEmail() {
+//   const userEmail = emailInput.value.trim(); /* Trim whitespace from the input */
+
+//   /* Regular expression for basic email validation */
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+//   if (userEmail === "") {
+//     displayError("Whoops! It looks like you forgot to add your email");
+//   } else if (!emailRegex.test(userEmail)) {
+//     displayError("Please provide a valid email address");
+//   } else {
+//     clearError();
+//   }
+//   /* Change the placeholder text */
+//   emailInput.value = "";
+// }
+
+// /* Add input event listener to clear error on user input */
+// emailInput.addEventListener("input", clearError);
+
+// function displayError(message) {
+//   /* emailInput.classList.add("error"); */
+//   errorMessage.textContent = message;
+//   /* emailInput.style.border = "1px solid var(--color-alert-error--dark"; */
+//   emailInput.placeholder = "example@example.com";
+// }
+
+// function clearError() {
+//   /* emailInput.classList.remove("error"); */
+//   errorMessage.textContent = "";
+//   /* emailInput.style.border = "1px solid var(--color-alert-info--dark)"; */
+//   emailInput.placeholder = "Your email address...";
+// }

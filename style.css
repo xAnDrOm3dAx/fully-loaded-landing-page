@@ -322,7 +322,9 @@
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row label {
   margin: 0 0 0.35rem;
 }
-.section-3-container .entry-points-wrapper #error-message {
+.section-3-container .entry-points-wrapper #error-message-email,
+.section-3-container .entry-points-wrapper #error-message-phone {
+  margin: 0.5rem 0 0;
   text-align: center;
 }
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-button {
