@@ -245,7 +245,7 @@
 .section-3-container {
   border-bottom: 2px solid var(--color-border);
 
-  background-color: #dce1e4;
+  background-color: #ececec;
 
   .entry-points-wrapper {
     // max-width: var(--width-max);
@@ -356,16 +356,20 @@
 
     .fully-loaded-redeem-form {
       display: none;
-      // display: block;
       margin: 0 auto;
       max-width: 500px;
       width: 100%;
-      padding: 0 var(--gutter);
 
       & h2 {
         font-size: 1.3rem;
         text-align: center;
         margin: var(--gutter-half) auto;
+      }
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter-half);
       }
     }
 
@@ -384,16 +388,20 @@
       font-weight: 600;
     }
 
-    .fully-loaded-redeem-form .form-row label,
-    .fully-loaded-redeem-form .form-row input[type="text"] {
-      margin: 0.35rem;
+    .fully-loaded-redeem-form .form-row label {
+      // .fully-loaded-redeem-form .form-row input[type="text"]
+      margin: 0 0 0.35rem;
+    }
+
+    #error-message {
+      // margin: 2rem 0 0;
+      text-align: center;
     }
 
     .fully-loaded-redeem-form .form-button {
-      display: -ms-flex;
       display: flex;
       justify-content: center;
-      margin: var(--gutter) 0 0;
+      // margin: var(--gutter) 0 0;
     }
 
     .form-button button[type="submit"] {
@@ -430,20 +438,20 @@
 // Footer
 .section-4-container {
   background-color: #dce1e4;
-  background-image: url(assets/background-images/snow-background-2.jpeg);
-  background-position: center;
+  background-image: url(assets/background-images/sand-1.jpeg);
+  background-position: 50% 75%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
   padding: var(--gutter);
   display: flex;
   justify-content: center;
 
   .section-4-wrapper {
-    background: rgba(67, 80, 97, 0.67);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.8px);
-    -webkit-backdrop-filter: blur(4.8px);
+    background: rgba(87, 88, 88, 0.38);
+    border-radius: var(--global-radius);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
     padding: var(--gutter);
     display: flex;
     flex-direction: column;

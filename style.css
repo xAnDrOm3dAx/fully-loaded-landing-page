@@ -215,7 +215,7 @@
 
 .section-3-container {
   border-bottom: 2px solid var(--color-border);
-  background-color: #dce1e4;
+  background-color: #ececec;
 }
 .section-3-container .entry-points-wrapper {
   max-width: 800px;
@@ -297,12 +297,16 @@
   margin: 0 auto;
   max-width: 500px;
   width: 100%;
-  padding: 0 var(--gutter);
 }
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form h2 {
   font-size: 1.3rem;
   text-align: center;
   margin: var(--gutter-half) auto;
+}
+.section-3-container .entry-points-wrapper .fully-loaded-redeem-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-half);
 }
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form.active-form {
   display: block;
@@ -315,15 +319,15 @@
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row label {
   font-weight: 600;
 }
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row label,
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row input[type=text] {
-  margin: 0.35rem;
+.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row label {
+  margin: 0 0 0.35rem;
+}
+.section-3-container .entry-points-wrapper #error-message {
+  text-align: center;
 }
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-button {
-  display: -ms-flex;
   display: flex;
   justify-content: center;
-  margin: var(--gutter) 0 0;
 }
 .section-3-container .entry-points-wrapper .form-button button[type=submit] {
   background-color: var(--color-black);
@@ -346,20 +350,19 @@
 
 .section-4-container {
   background-color: #dce1e4;
-  background-image: url(assets/background-images/snow-background-2.jpeg);
-  background-position: center;
+  background-image: url(assets/background-images/sand-1.jpeg);
+  background-position: 50% 75%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   padding: var(--gutter);
   display: flex;
   justify-content: center;
 }
 .section-4-container .section-4-wrapper {
-  background: rgba(67, 80, 97, 0.67);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.8px);
-  -webkit-backdrop-filter: blur(4.8px);
+  background: rgba(87, 88, 88, 0.38);
+  border-radius: var(--global-radius);
+  backdrop-filter: blur(1.7px);
+  -webkit-backdrop-filter: blur(1.7px);
   padding: var(--gutter);
   display: flex;
   flex-direction: column;

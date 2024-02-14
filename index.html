@@ -162,25 +162,32 @@
 
         <div class="fully-loaded-redeem-form">
           <h2>Redeem Your Entry Points Below</h2>
+
           <form>
             <div class="form-row">
               <label>Account</label>
               <input type="text" name="redeemAccount" disabled="disabled" readonly>
             </div>
+
             <div class="form-row">
               <label>Email</label>
-              <input type="text" name="redeemEmail">
+              <input type="text" id="user-email" name="redeemEmail" placeholder="Your email address...">
             </div>
+
             <div class="form-row">
               <label>Phone</label>
               <input type="text" name="redeemPhone">
             </div>
+
             <div class="form-row">
               <label>Total Entry Points</label>
               <input type="text" name="redeemEntryPoints" disabled="disabled" readonly>
             </div>
+
+            <div id="error-message"></div> <!-- Placeholder for error message -->
+
             <div class="form-button">
-              <button type="submit">Redeem Prize</button>
+              <button type="submit" id="submit-btn">Redeem Prize</button>
             </div>
           </form>
         </div>
