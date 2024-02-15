@@ -15,7 +15,7 @@
 
   .section-1-hero-wrapper {
     display: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-2560_x_1440.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-1920_x_1080.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +31,6 @@
       overflow: hidden;
       position: absolute;
       z-index: 1;
-      // height: 100%;
       height: 100vh;
       width: 100vw;
     }
@@ -123,8 +122,6 @@
 
 // Pools
 .section-2-container {
-  border-bottom: 2px solid var(--color-border);
-
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-3.jpeg);
   background-position: center top;
@@ -140,9 +137,12 @@
     flex-direction: column;
     align-items: center;
     padding: 0 var(--gutter);
+    position: relative;
 
     .header-wrapper-mobile {
       padding: 0 0 var(--gutter);
+      position: relative;
+      z-index: 10;
 
       & img {
         width: 100%;
@@ -206,7 +206,6 @@
         padding: var(--gutter-half);
         background: rgb(87 88 88 / 38%);
         border-radius: var(--global-radius);
-        // box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
         backdrop-filter: blur(1.7px);
         -webkit-backdrop-filter: blur(1.7px);
 
@@ -238,14 +237,36 @@
         }
       }
     }
+
+    .snowman-image {
+      position: absolute;
+      bottom: -45px;
+      left: 0px;
+      max-width: 200px;
+
+      & img {
+        height: auto;
+        width: 100%;
+      }
+
+      @media (min-width: 480px) {
+        max-width: 280px;
+      }
+
+      @media (min-width: 1200px) {
+        bottom: -64px;
+        max-width: 100%;
+      }
+    }
   }
 }
 
 // Account Info & Points Redemption
 .section-3-container {
   border-bottom: 2px solid var(--color-border);
-
+  border-top: 2px solid var(--color-border);
   background-color: #ececec;
+  position: relative;
 
   .entry-points-wrapper {
     max-width: calc(800px + 2rem * 2);
@@ -297,7 +318,6 @@
 
     .fully-loaded-spinner {
       display: none;
-      // display: block;
       width: 50px;
       height: 50px;
       margin: 0 auto;
@@ -313,25 +333,6 @@
       display: block;
       animation: fullyLoadedSpinner 0.6s ease infinite;
     }
-
-    // .fully-loaded-buttons {
-    //   width: 100%;
-    //   padding: var(--gutter);
-    //   display: grid;
-    //   grid-template-columns: repeat(2, 1fr);
-    //   gap: 0.75rem;
-
-    //   .btn-reload,
-    //   .btn-redeem {
-    //     background-color: var(--color-black);
-    //     color: var(--_accent);
-
-    //     &:hover {
-    //       background-color: var(--_accent);
-    //       color: var(--color-black);
-    //     }
-    //   }
-    // }
 
     .fully-loaded-buttons {
       width: 100%;
@@ -388,7 +389,6 @@
     }
 
     .fully-loaded-redeem-form .form-row label {
-      // .fully-loaded-redeem-form .form-row input[type="text"]
       margin: 0 0 0.35rem;
     }
 
@@ -401,7 +401,6 @@
     .fully-loaded-redeem-form .form-button {
       display: flex;
       justify-content: center;
-      // margin: var(--gutter) 0 0;
     }
 
     .form-button button[type="submit"] {
@@ -422,14 +421,6 @@
 
       .account-name span {
         min-width: 500px;
-      }
-
-      .fully-loaded-redeem-form {
-        // width: fit-content;
-      }
-
-      .fully-loaded-redeem-form form {
-        // min-width: 500px;
       }
     }
   }

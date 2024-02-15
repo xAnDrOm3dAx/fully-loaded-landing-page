@@ -14,7 +14,7 @@
 }
 .section-1-container .section-1-hero-wrapper {
   display: none;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-2560_x_1440.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-1920_x_1080.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,7 +106,6 @@
 }
 
 .section-2-container {
-  border-bottom: 2px solid var(--color-border);
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-3.jpeg);
   background-position: center top;
@@ -123,9 +122,12 @@
   flex-direction: column;
   align-items: center;
   padding: 0 var(--gutter);
+  position: relative;
 }
 .section-2-container .section-2-wrapper .header-wrapper-mobile {
   padding: 0 0 var(--gutter);
+  position: relative;
+  z-index: 10;
 }
 .section-2-container .section-2-wrapper .header-wrapper-mobile img {
   width: 100%;
@@ -212,10 +214,33 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.section-2-container .section-2-wrapper .snowman-image {
+  position: absolute;
+  bottom: -45px;
+  left: 0px;
+  max-width: 200px;
+}
+.section-2-container .section-2-wrapper .snowman-image img {
+  height: auto;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .section-2-container .section-2-wrapper .snowman-image {
+    max-width: 280px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-2-container .section-2-wrapper .snowman-image {
+    bottom: -64px;
+    max-width: 100%;
+  }
+}
 
 .section-3-container {
   border-bottom: 2px solid var(--color-border);
+  border-top: 2px solid var(--color-border);
   background-color: #ececec;
+  position: relative;
 }
 .section-3-container .entry-points-wrapper {
   max-width: calc(800px + 4rem);
