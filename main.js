@@ -22,7 +22,11 @@ const tags = document.querySelectorAll(".pool-1, .pool-2, .pool-3");
 tags.forEach((tag) => {
   observer.observe(tag);
 });
-
+//
+//
+//
+//
+//
 // Snow Effect
 class WaveNoise {
   constructor(requiredWaves, speed) {
@@ -170,14 +174,22 @@ window.onload = loop;
 //     },
 //   },
 // });
-
+//
+//
+//
+//
+//
 // Swiper 2
 const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
   },
 });
-
+//
+//
+//
+//
+//
 // Parallax Images
 function getParallaxImages() {
   var images = document.querySelectorAll(".Parallax img");
@@ -188,7 +200,11 @@ function getParallaxImages() {
   });
 }
 getParallaxImages();
-
+//
+//
+//
+//
+//
 // Redeem Points Section
 const redeemEntries = document.querySelector(".btn-redeem");
 const redeemForm = document.querySelector(".fully-loaded-redeem-form");
