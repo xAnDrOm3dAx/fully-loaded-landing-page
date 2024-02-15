@@ -1,5 +1,5 @@
 .section-1-container {
-  border-bottom: 2px solid var(--color-border);
+  border-bottom: 2px solid #909090;
   background-color: #dce1e4;
 }
 .section-1-container .section-1-hero-wrapper-mobile {
@@ -237,8 +237,8 @@
 }
 
 .section-3-container {
-  border-bottom: 2px solid var(--color-border);
-  border-top: 2px solid var(--color-border);
+  border-bottom: 2px solid #909090;
+  border-top: 2px solid #909090;
   background-color: #ececec;
   position: relative;
 }
