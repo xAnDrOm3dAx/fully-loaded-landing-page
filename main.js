@@ -153,21 +153,28 @@ const loop = function () {
 
 window.onload = loop;
 
-// Slider Swiper
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 1,
-  spaceBetween: 19,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 2,
-    },
-    992: {
-      slidesPerView: 3,
-    },
+// Swiper 1
+// var swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 19,
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
+//   breakpoints: {
+//     768: {
+//       slidesPerView: 2,
+//     },
+//     992: {
+//       slidesPerView: 3,
+//     },
+//   },
+// });
+
+// Swiper 2
+const swiper = new Swiper(".mySwiper", {
+  pagination: {
+    el: ".swiper-pagination",
   },
 });
 
@@ -183,18 +190,16 @@ function getParallaxImages() {
 getParallaxImages();
 
 // Redeem Points Section
-
 const redeemEntries = document.querySelector(".btn-redeem");
 const redeemForm = document.querySelector(".fully-loaded-redeem-form");
 redeemEntries.addEventListener("click", () => {
   redeemForm.style.display = "block";
 });
 
-// Email Validation
 const emailInput = document.querySelector("#user-email");
 const phoneInput = document.querySelector("#user-phone");
 const submitBtn = document.querySelector("#submit-btn");
-// const errorMessage = document.querySelector("#error-message");
+/* const errorMessage = document.querySelector("#error-message"); */
 const errorMessageEmail = document.querySelector("#error-message-email");
 const errorMessagePhone = document.querySelector("#error-message-phone");
 
@@ -219,7 +224,7 @@ function validateEmail() {
 
 function validatePhone() {
   const userPhone = phoneInput.value.trim();
-  const phoneRegex = /^\d{10}$/; // Adjust regex according to your phone number format
+  const phoneRegex = /^\d{10}$/;
 
   if (userPhone === "") {
     displayPhoneError("Whoops! It looks like you forgot to add your phone number");
@@ -242,10 +247,30 @@ function clearEmailError() {
 
 function displayPhoneError(message) {
   errorMessagePhone.textContent = message;
-  phoneInput.placeholder = "04XXXXXXXX"; // Adjust placeholder according to your phone number format
+  phoneInput.placeholder = "04XXXXXXXX";
 }
 
 function clearPhoneError() {
   errorMessagePhone.textContent = "";
   phoneInput.placeholder = "Your phone number...";
+}
+//
+//
+//
+//
+//
+//Dropdown 3
+var accItem = document.getElementsByClassName("accordionItem");
+var accHD = document.getElementsByClassName("accordionItemHeading");
+for (i = 0; i < accHD.length; i++) {
+  accHD[i].addEventListener("click", toggleItem, false);
+}
+function toggleItem() {
+  var itemClass = this.parentNode.className;
+  for (i = 0; i < accItem.length; i++) {
+    accItem[i].className = "accordionItem close";
+  }
+  if (itemClass == "accordionItem close") {
+    this.parentNode.className = "accordionItem open";
+  }
 }
