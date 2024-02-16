@@ -15,7 +15,7 @@
 
   .section-1-hero-wrapper {
     display: none;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url("assets/background-images/background-image-1920_x_1080_alt.jpg");
+    background-image: url("assets/background-images/background-image-1920_x_1080_alt.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,11 +71,12 @@
       height: auto;
       width: 1300px;
       position: absolute;
-      bottom: 0px;
+      bottom: -40px;
       z-index: 0;
 
       .gifts-image-right {
         transform: rotateY(180deg);
+        z-index: 1;
       }
 
       .surfboard-image {
@@ -108,7 +109,7 @@
         position: absolute;
         bottom: 155px;
         left: 827px;
-        z-index: -1;
+        z-index: 0;
         width: 337px;
 
         & img {
@@ -116,6 +117,19 @@
           height: auto;
         }
       }
+
+      // .tree-image {
+      //   width: 302px;
+      //   position: absolute;
+      //   z-index: -1;
+      //   bottom: 190px;
+      //   right: 14px;
+
+      //   & img {
+      //     width: 100%;
+      //     height: auto;
+      //   }
+      // }
     }
   }
 }
