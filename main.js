@@ -157,7 +157,7 @@ const loop = function () {
 
 window.onload = loop;
 
-// Swiper 1
+// Swiper Alt.
 // var swiper = new Swiper(".mySwiper", {
 //   slidesPerView: 1,
 //   spaceBetween: 19,
@@ -179,7 +179,7 @@ window.onload = loop;
 //
 //
 //
-// Swiper 2
+// Swiper
 const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
