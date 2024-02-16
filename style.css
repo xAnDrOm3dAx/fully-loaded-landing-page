@@ -254,27 +254,46 @@
   float: right;
   font-size: 25px;
 }
-.section-2-container .section-2-wrapper .close .accordionItemContent {
+.section-2-container .section-2-wrapper .accordionWrapper .close .accordionItemContent {
   height: 0px;
   transition: height 1s ease-out;
   transform: scaleY(0);
   float: left;
   display: block;
 }
-.section-2-container .section-2-wrapper .open .accordionItemContent {
-  padding: 20px;
-  background-color: #f0f1f1;
+.section-2-container .section-2-wrapper .accordionWrapper .open .accordionItemContent {
+  padding: var(--gutter);
+  background-color: #ffffff;
   border: 1px solid #ddd;
   width: 100%;
   border-radius: 0 0 3px 3px;
   margin: 0px 0px 10px 0px;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gutter-half);
   transform: scaleY(1);
   transform-origin: top;
   transition: transform 0.4s ease;
   box-sizing: border-box;
+  max-height: 500px;
+  overflow-y: scroll;
 }
-.section-2-container .section-2-wrapper .open .accordionItemHeading {
+.section-2-container .section-2-wrapper .accordionWrapper .open .accordionItemContent .prizes-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-2-container .section-2-wrapper .accordionWrapper .open .accordionItemContent .prizes-wrapper h2 {
+  margin: 0;
+}
+@media (min-width: 480px) {
+  .section-2-container .section-2-wrapper .accordionWrapper .open .accordionItemContent .prizes-wrapper {
+    flex-direction: row;
+    gap: var(--gutter);
+  }
+}
+.section-2-container .section-2-wrapper .accordionWrapper .open .accordionItemHeading {
   margin: 0px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -283,29 +302,28 @@
   background-color: #073e63;
   color: #cdd7d8;
 }
-.section-2-container .section-2-wrapper .snowman-image {
-  position: absolute;
-  bottom: -45px;
-  left: 0px;
-  max-width: 260px;
-}
-.section-2-container .section-2-wrapper .snowman-image img {
-  height: auto;
-  width: 100%;
-}
-@media (min-width: 480px) {
-  .section-2-container .section-2-wrapper .snowman-image {
-    max-width: 340px;
-  }
-}
-@media (min-width: 1200px) {
-  .section-2-container .section-2-wrapper .snowman-image {
-    bottom: -64px;
-    max-width: 100%;
-  }
-}
 .section-2-container .section-2-wrapper .prize-pool-wrapper {
   display: none;
+  padding: var(--gutter);
+  max-width: var(--width-max);
+}
+@media (min-width: 992px) {
+  .section-2-container .section-2-wrapper .prize-pool-wrapper {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .header-image {
+  max-width: 200px;
+}
+.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .prize-image {
+  max-width: 200px;
 }
 
 .section-3-container {

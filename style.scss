@@ -220,6 +220,10 @@
       border-radius: var(--global-radius);
       backdrop-filter: blur(1.7px);
       -webkit-backdrop-filter: blur(1.7px);
+
+      @media (min-width: 992px) {
+        // display: none;
+      }
     }
 
     .swiper-slide {
@@ -294,66 +298,106 @@
           font-size: 25px;
         }
       }
-    }
 
-    .close .accordionItemContent {
-      height: 0px;
-      transition: height 1s ease-out;
-      transform: scaleY(0);
-      float: left;
-      display: block;
-    }
+      .close .accordionItemContent {
+        height: 0px;
+        transition: height 1s ease-out;
+        transform: scaleY(0);
+        float: left;
+        display: block;
+      }
 
-    .open .accordionItemContent {
-      padding: 20px;
-      background-color: #f0f1f1;
-      border: 1px solid #ddd;
-      width: 100%;
-      border-radius: 0 0 3px 3px;
-      margin: 0px 0px 10px 0px;
-      display: block;
-      transform: scaleY(1);
-      transform-origin: top;
-      transition: transform 0.4s ease;
-      box-sizing: border-box;
-    }
-
-    .open .accordionItemHeading {
-      margin: 0px;
-
-      border-top-left-radius: 3px;
-      border-top-right-radius: 3px;
-
-      border-bottom-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      background-color: #073e63;
-      color: #cdd7d8;
-    }
-
-    .snowman-image {
-      position: absolute;
-      bottom: -45px;
-      left: 0px;
-      max-width: 260px;
-
-      & img {
-        height: auto;
+      .open .accordionItemContent {
+        padding: var(--gutter);
+        background-color: #ffffff;
+        border: 1px solid #ddd;
         width: 100%;
+        border-radius: 0 0 3px 3px;
+        margin: 0px 0px 10px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter-half);
+        transform: scaleY(1);
+        transform-origin: top;
+        transition: transform 0.4s ease;
+        box-sizing: border-box;
+        max-height: 500px;
+        overflow-y: scroll;
+
+        .prizes-wrapper {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-evenly;
+
+          & h2 {
+            margin: 0;
+          }
+
+          @media (min-width: 480px) {
+            flex-direction: row;
+            gap: var(--gutter);
+          }
+        }
       }
 
-      @media (min-width: 480px) {
-        max-width: 340px;
-      }
-
-      @media (min-width: 1200px) {
-        bottom: -64px;
-        max-width: 100%;
+      .open .accordionItemHeading {
+        margin: 0px;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+        background-color: #073e63;
+        color: #cdd7d8;
       }
     }
+
+    // .snowman-image {
+    //   position: absolute;
+    //   bottom: -45px;
+    //   left: 0px;
+    //   max-width: 260px;
+
+    //   & img {
+    //     height: auto;
+    //     width: 100%;
+    //   }
+
+    //   @media (min-width: 480px) {
+    //     max-width: 340px;
+    //   }
+
+    //   @media (min-width: 1200px) {
+    //     bottom: -64px;
+    //     max-width: 100%;
+    //   }
+    // }
 
     .prize-pool-wrapper {
-      // display: flex;
       display: none;
+      padding: var(--gutter);
+      max-width: var(--width-max);
+
+      @media (min-width: 992px) {
+        // display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .prize-pools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+
+        .header-image {
+          max-width: 200px;
+        }
+
+        .prize-image {
+          max-width: 200px;
+        }
+      }
     }
   }
 }
