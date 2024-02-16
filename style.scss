@@ -283,14 +283,21 @@
         .accordionItemHeading {
           cursor: pointer;
           padding: 10px;
-          font-size: 22px;
-          font-weight: 400;
+          // font-size: 22px;
+          // font-weight: 400;
           background: #ec1c24;
           color: #fff;
           width: 100%;
           border-radius: 3px;
           box-sizing: border-box;
           margin: 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          & img {
+            width: 100px;
+          }
         }
 
         .accordionItemHeading span {

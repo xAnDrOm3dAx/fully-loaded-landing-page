@@ -241,14 +241,18 @@
 .section-2-container .section-2-wrapper .accordionWrapper .accordionItem .accordionItemHeading {
   cursor: pointer;
   padding: 10px;
-  font-size: 22px;
-  font-weight: 400;
   background: #ec1c24;
   color: #fff;
   width: 100%;
   border-radius: 3px;
   box-sizing: border-box;
   margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-2-container .section-2-wrapper .accordionWrapper .accordionItem .accordionItemHeading img {
+  width: 100px;
 }
 .section-2-container .section-2-wrapper .accordionWrapper .accordionItem .accordionItemHeading span {
   float: right;
