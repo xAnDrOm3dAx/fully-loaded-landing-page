@@ -209,172 +209,200 @@
       }
     }
 
-    // Swiper
-    .swiper {
+    // // Swiper
+    // .swiper {
+    //   width: 100%;
+    //   height: 100%;
+    //   max-width: 800px;
+    //   padding: 0 0 var(--gutter);
+    //   margin: 0 0 var(--gutter);
+    //   background: rgb(87 88 88 / 38%);
+    //   border-radius: var(--global-radius);
+    //   backdrop-filter: blur(1.7px);
+    //   -webkit-backdrop-filter: blur(1.7px);
+
+    //   @media (min-width: 992px) {
+    //     // display: none;
+    //   }
+    // }
+
+    // .swiper-slide {
+    //   display: flex;
+    //   flex-direction: column;
+    //   justify-content: center;
+    //   align-items: center;
+    //   gap: var(--gutter-half);
+
+    //   .header-image {
+    //     width: 100%;
+    //     max-width: 120px;
+    //     height: auto;
+    //     margin: 1.2rem 0 0;
+
+    //     @media (min-width: 480px) {
+    //       max-width: 190px;
+    //     }
+    //   }
+
+    //   .prize-image {
+    //     width: 100%;
+    //     max-width: 140px;
+    //     height: auto;
+
+    //     @media (min-width: 480px) {
+    //       max-width: 240px;
+    //     }
+    //   }
+
+    //   img {
+    //     display: block;
+    //     width: 100%;
+    //     height: 100%;
+    //     object-fit: cover;
+    //   }
+    // }
+
+    .prize-pool-wrapper {
       width: 100%;
-      height: 100%;
-      max-width: 800px;
-      padding: 0 0 var(--gutter);
+      background-color: transparent;
       margin: 0 0 var(--gutter);
-      background: rgb(87 88 88 / 38%);
-      border-radius: var(--global-radius);
-      backdrop-filter: blur(1.7px);
-      -webkit-backdrop-filter: blur(1.7px);
+      max-width: 1600px;
 
-      @media (min-width: 992px) {
-        // display: none;
-      }
-    }
-
-    .swiper-slide {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: var(--gutter-half);
-
-      .header-image {
+      .prize-pools {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--gutter-half);
         width: 100%;
-        max-width: 120px;
-        height: auto;
-        margin: 1.2rem 0 0;
 
-        @media (min-width: 480px) {
-          max-width: 190px;
-        }
-      }
-
-      .prize-image {
-        width: 100%;
-        max-width: 140px;
-        height: auto;
-
-        @media (min-width: 480px) {
-          max-width: 240px;
-        }
-      }
-
-      img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    }
-
-    // Dropdown 3
-    .accordionWrapper {
-      background: transparent;
-      text-align: center;
-      width: 100%;
-      border-radius: 5px;
-      box-sizing: border-box;
-
-      .accordionItem {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        font-family: "Open-sans", Arial, sans-serif;
-
-        .accordionItemHeading {
-          cursor: pointer;
-          padding: 10px;
-          // font-size: 22px;
-          // font-weight: 400;
-          background: #ec1c24;
-          color: #fff;
-          width: 100%;
-          border-radius: 3px;
-          box-sizing: border-box;
-          margin: 0;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-
-          & img {
-            width: 100px;
-          }
+        .prize-image {
+          max-width: 200px;
         }
 
-        .accordionItemHeading span {
-          float: right;
-          font-size: 25px;
-        }
-      }
-
-      .close .accordionItemContent {
-        height: 0px;
-        transition: height 1s ease-out;
-        transform: scaleY(0);
-        float: left;
-        display: block;
-      }
-
-      .open .accordionItemContent {
-        border-radius: 0 0 3px 3px;
-        margin: 0px 0px 10px 0px;
-        padding: var(--gutter);
-        transform: scaleY(1);
-        transform-origin: top;
-        transition: transform 0.4s ease;
-        box-sizing: border-box;
-        max-height: 600px;
-        overflow-y: scroll;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        grid-auto-rows: auto;
-        grid-gap: 1rem;
-        background: rgba(87, 88, 88, 0.38);
-        backdrop-filter: blur(1.7px);
-        -webkit-backdrop-filter: blur(1.7px);
-
-        @media (min-width: 480px) {
-          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        }
-
-        @media (min-width: 1200px) {
-          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        }
-
-        .prizes-wrapper {
+        .accordian-container {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          background: #ffffff;
-          border-radius: var(--global-radius);
-          border: solid 1px var(--color-gray-light);
-          padding: var(--gutter);
+          gap: var(--gutter);
+          width: 100%;
+          max-width: 800px;
 
-          @media (min-width: 480px) {
-            flex-direction: row;
-            gap: var(--gutter-half);
-            padding: var(--gutter-half);
-          }
+          // Dropdown 3
+          .accordion-wrapper {
+            background: transparent;
+            text-align: center;
+            width: 100%;
+            border-radius: 5px;
+            box-sizing: border-box;
 
-          & h2 {
-            margin: var(--gutter-half) 0 0;
-            font-family: "Work Sans", sans-serif;
-            font-style: normal;
-            font-weight: var(--font-weight-400);
-            font-size: var(--font-size-medium);
-            color: var(--color-black);
+            .accordion-item {
+              display: block;
+              width: 100%;
+              box-sizing: border-box;
+              font-family: "Open-sans", Arial, sans-serif;
 
-            @media (min-width: 480px) {
-              margin: 0;
+              .accordion-item-heading {
+                cursor: pointer;
+                padding: 10px;
+                // font-size: 22px;
+                // font-weight: 400;
+                background: #ec1c24;
+                color: #fff;
+                width: 100%;
+                border-radius: 3px;
+                box-sizing: border-box;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                & img {
+                  width: 80px;
+                  height: auto;
+                }
+              }
+
+              .accordion-item-heading span {
+                float: right;
+                font-size: 1rem;
+              }
+            }
+
+            .close .accordion-item-content {
+              height: 0px;
+              transition: height 1s ease-out;
+              transform: scaleY(0);
+              float: left;
+              display: block;
+            }
+
+            .open .accordion-item-content {
+              border-radius: 0 0 3px 3px;
+              margin: 0px 0px 10px 0px;
+              padding: var(--gutter);
+              transform: scaleY(1);
+              transform-origin: top;
+              transition: transform 0.4s ease;
+              box-sizing: border-box;
+              max-height: 600px;
+              overflow-y: scroll;
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+              grid-auto-rows: auto;
+              grid-gap: 1rem;
+              background: rgba(87, 88, 88, 0.38);
+              backdrop-filter: blur(1.7px);
+              -webkit-backdrop-filter: blur(1.7px);
+
+              @media (min-width: 480px) {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+              }
+
+              @media (min-width: 1200px) {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+              }
+
+              .prizes-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background: #ffffff;
+                border-radius: var(--global-radius);
+                border: solid 1px var(--color-gray-light);
+                padding: var(--gutter);
+
+                @media (min-width: 480px) {
+                  flex-direction: row;
+                  gap: var(--gutter-half);
+                  padding: var(--gutter-half);
+                }
+
+                & h2 {
+                  margin: var(--gutter-half) 0 0;
+                  font-family: "Work Sans", sans-serif;
+                  font-style: normal;
+                  font-weight: var(--font-weight-400);
+                  font-size: var(--font-size-medium);
+                  color: var(--color-black);
+
+                  @media (min-width: 480px) {
+                    margin: 0;
+                  }
+                }
+              }
+            }
+
+            .open .accordion-item-heading {
+              margin: 0px;
+              border-top-left-radius: 3px;
+              border-top-right-radius: 3px;
+              border-bottom-right-radius: 0px;
+              border-bottom-left-radius: 0px;
+              background-color: #073e63;
+              color: #cdd7d8;
             }
           }
         }
-      }
-
-      .open .accordionItemHeading {
-        margin: 0px;
-        border-top-left-radius: 3px;
-        border-top-right-radius: 3px;
-        border-bottom-right-radius: 0px;
-        border-bottom-left-radius: 0px;
-        background-color: #073e63;
-        color: #cdd7d8;
       }
     }
 
@@ -398,40 +426,6 @@
     //     max-width: 100%;
     //   }
     // }
-
-    .prize-pool-wrapper {
-      // display: flex;
-      // padding: var(--gutter) 0 var(--gutter);
-      width: 100%;
-      // justify-content: center;
-      // gap: 2rem;
-      background-color: transparent;
-      margin: 0 0 var(--gutter);
-      max-width: 1600px;
-
-      .prize-pools {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: var(--gutter-half);
-        width: 100%;
-
-        // .header-image {
-        //   max-width: 200px;
-        // }
-
-        .prize-image {
-          max-width: 200px;
-        }
-
-        .accordian-container {
-          display: flex;
-          flex-direction: column;
-          gap: var(--gutter);
-          width: 100%;
-        }
-      }
-    }
   }
 }
 
