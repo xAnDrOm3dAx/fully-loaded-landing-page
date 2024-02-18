@@ -187,9 +187,6 @@
   gap: var(--gutter-half);
   width: 100%;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .prize-image {
-  max-width: 200px;
-}
 .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container {
   display: flex;
   flex-direction: column;
@@ -230,6 +227,15 @@
 .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .accordion-item .accordion-item-heading span {
   float: right;
   font-size: 1rem;
+}
+.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-heading {
+  margin: 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-color: #073e63;
+  color: #cdd7d8;
 }
 .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .close .accordion-item-content {
   height: 0px;
@@ -295,15 +301,6 @@
   .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content .prizes-wrapper h2 {
     margin: 0;
   }
-}
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-heading {
-  margin: 0px;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-  background-color: #073e63;
-  color: #cdd7d8;
 }
 
 .section-3-container {
