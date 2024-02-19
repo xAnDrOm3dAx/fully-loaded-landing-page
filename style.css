@@ -177,37 +177,29 @@
 .section-2-container .section-2-wrapper .prize-pool-wrapper {
   width: 100%;
   background-color: transparent;
-  margin: 0 0 var(--gutter);
-  max-width: 1600px;
+  margin: 0 auto var(--gutter);
+  max-width: 800px;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--gutter-half);
-  width: 100%;
-}
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container {
+.section-2-container .section-2-wrapper .accordian-container {
   display: flex;
   flex-direction: column;
   gap: var(--gutter);
   width: 100%;
-  max-width: 800px;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper {
+.section-2-container .section-2-wrapper .accordion-wrapper {
   background: transparent;
   text-align: center;
   width: 100%;
   border-radius: 5px;
   box-sizing: border-box;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .accordion-item {
+.section-2-container .section-2-wrapper .accordion-wrapper .accordion-item {
   display: block;
   width: 100%;
   box-sizing: border-box;
   font-family: "Open-sans", Arial, sans-serif;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .accordion-item .accordion-item-heading {
+.section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading {
   cursor: pointer;
   padding: 10px;
   background: #ec1c24;
@@ -220,15 +212,15 @@
   justify-content: space-between;
   align-items: center;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .accordion-item .accordion-item-heading img {
+.section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading img {
   width: 80px;
   height: auto;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .accordion-item .accordion-item-heading span {
+.section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading span {
   float: right;
   font-size: 1rem;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-heading {
+.section-2-container .section-2-wrapper .accordion-wrapper .open .accordion-item-heading {
   margin: 0px;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
@@ -237,14 +229,14 @@
   background-color: #073e63;
   color: #cdd7d8;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .close .accordion-item-content {
+.section-2-container .section-2-wrapper .accordion-wrapper .close .accordion-item-content {
   height: 0px;
   transition: height 1s ease-out;
   transform: scaleY(0);
   float: left;
   display: block;
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content {
+.section-2-container .section-2-wrapper .accordion-wrapper .open .accordion-item-content {
   border-radius: 0 0 3px 3px;
   margin: 0px 0px 10px 0px;
   padding: var(--gutter);
@@ -263,16 +255,16 @@
   -webkit-backdrop-filter: blur(1.7px);
 }
 @media (min-width: 480px) {
-  .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content {
+  .section-2-container .section-2-wrapper .accordion-wrapper .open .accordion-item-content {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
 @media (min-width: 1200px) {
-  .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content {
+  .section-2-container .section-2-wrapper .accordion-wrapper .open .accordion-item-content {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content .prizes-wrapper {
+.section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -283,13 +275,13 @@
   padding: var(--gutter);
 }
 @media (min-width: 480px) {
-  .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content .prizes-wrapper {
+  .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper {
     flex-direction: row;
     gap: var(--gutter-half);
     padding: var(--gutter-half);
   }
 }
-.section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content .prizes-wrapper h2 {
+.section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper h2 {
   margin: var(--gutter-half) 0 0;
   font-family: "Work Sans", sans-serif;
   font-style: normal;
@@ -298,7 +290,7 @@
   color: var(--color-black);
 }
 @media (min-width: 480px) {
-  .section-2-container .section-2-wrapper .prize-pool-wrapper .prize-pools .accordian-container .accordion-wrapper .open .accordion-item-content .prizes-wrapper h2 {
+  .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper h2 {
     margin: 0;
   }
 }
