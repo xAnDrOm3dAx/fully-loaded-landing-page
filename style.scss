@@ -308,15 +308,17 @@
         border-radius: var(--global-radius);
         border: solid 1px var(--color-gray-light);
         padding: var(--gutter);
+        gap: var(--gutter-half);
 
         @media (min-width: 480px) {
           flex-direction: row;
-          gap: var(--gutter-half);
+
           padding: var(--gutter-half);
         }
 
         & h2 {
-          margin: var(--gutter-half) 0 0;
+          flex: 1;
+          // margin: var(--gutter-half) 0 0;
           font-family: "Work Sans", sans-serif;
           font-style: normal;
           font-weight: var(--font-weight-400);
@@ -326,6 +328,10 @@
           @media (min-width: 480px) {
             margin: 0;
           }
+        }
+
+        .prize-image {
+          flex: 1;
         }
       }
     }
