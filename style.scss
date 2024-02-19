@@ -234,7 +234,6 @@
         padding: 0.6rem;
         color: var(--color-white);
         width: 100%;
-        // border-radius: 3px;
         box-sizing: border-box;
         margin: 0;
         display: flex;
@@ -261,10 +260,6 @@
 
       .open .accordion-item-heading {
         margin: 0px;
-        // border-top-left-radius: 3px;
-        // border-top-right-radius: 3px;
-        // border-bottom-right-radius: 0px;
-        // border-bottom-left-radius: 0px;
         background: rgba(0, 0, 0, 0.8);
         backdrop-filter: blur(1.7px);
         -webkit-backdrop-filter: blur(1.7px);
@@ -279,7 +274,6 @@
       }
 
       .open .accordion-item-content {
-        // border-radius: 0 0 3px 3px;
         margin: 0px 0px 10px 0px;
         padding: var(--gutter);
         transform: scaleY(1);
