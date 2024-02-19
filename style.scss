@@ -225,7 +225,7 @@
 
       .accordion-item-heading {
         cursor: pointer;
-        padding: 10px;
+        padding: 0.6rem;
         background: #ec1c24;
         color: #fff;
         width: 100%;
@@ -409,12 +409,6 @@
         flex: 1;
         min-width: 150px;
         background-color: var(--color-black);
-        color: var(--_accent);
-
-        &:hover {
-          background-color: var(--_accent);
-          color: var(--color-black);
-        }
       }
     }
 
@@ -469,7 +463,6 @@
 
     .form-button button[type="submit"] {
       background-color: var(--color-black);
-      color: var(--_accent);
       border: 0;
     }
 
@@ -541,13 +534,7 @@
         button {
           width: 100%;
           background-color: var(--color-black);
-          color: var(--_accent);
           border: 0;
-
-          &:hover {
-            background-color: var(--_accent);
-            color: var(--color-black);
-          }
         }
       }
     }

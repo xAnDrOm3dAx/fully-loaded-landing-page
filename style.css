@@ -201,7 +201,7 @@
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading {
   cursor: pointer;
-  padding: 10px;
+  padding: 0.6rem;
   background: #ec1c24;
   color: #fff;
   width: 100%;
@@ -369,12 +369,6 @@
   flex: 1;
   min-width: 150px;
   background-color: var(--color-black);
-  color: var(--_accent);
-}
-.section-3-container .entry-points-wrapper .fully-loaded-buttons .btn-reload:hover,
-.section-3-container .entry-points-wrapper .fully-loaded-buttons .btn-redeem:hover {
-  background-color: var(--_accent);
-  color: var(--color-black);
 }
 .section-3-container .entry-points-wrapper .fully-loaded-redeem-form {
   display: none;
@@ -417,7 +411,6 @@
 }
 .section-3-container .entry-points-wrapper .form-button button[type=submit] {
   background-color: var(--color-black);
-  color: var(--_accent);
   border: 0;
 }
 .section-3-container .entry-points-wrapper .form-button button[type=submit]:hover {
@@ -488,13 +481,7 @@
 .section-4-container .section-4-wrapper .button-links .btn-group-2 button {
   width: 100%;
   background-color: var(--color-black);
-  color: var(--_accent);
   border: 0;
-}
-.section-4-container .section-4-wrapper .button-links .btn-group-1 button:hover,
-.section-4-container .section-4-wrapper .button-links .btn-group-2 button:hover {
-  background-color: var(--_accent);
-  color: var(--color-black);
 }
 .section-4-container .section-4-wrapper .logos {
   display: flex;
