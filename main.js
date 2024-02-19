@@ -156,36 +156,6 @@ const loop = function () {
 };
 
 window.onload = loop;
-
-// Swiper Alt.
-// var swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 19,
-//   navigation: {
-//     nextEl: ".swiper-button-next",
-//     prevEl: ".swiper-button-prev",
-//   },
-//   breakpoints: {
-//     768: {
-//       slidesPerView: 2,
-//     },
-//     992: {
-//       slidesPerView: 3,
-//     },
-//   },
-// });
-//
-//
-//
-//
-//
-// Swiper
-const swiper = new Swiper(".mySwiper", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
-//
 //
 //
 //
@@ -275,16 +245,16 @@ function clearPhoneError() {
 //
 //
 //
-//Dropdown 3
-const accItem = document.getElementsByClassName("accordion-item");
-const accHD = document.getElementsByClassName("accordion-item-heading");
-for (i = 0; i < accHD.length; i++) {
-  accHD[i].addEventListener("click", toggleItem, false);
+//Accordians
+const accordianItem = document.getElementsByClassName("accordion-item");
+const accordianItemHeading = document.getElementsByClassName("accordion-item-heading");
+for (i = 0; i < accordianItemHeading.length; i++) {
+  accordianItemHeading[i].addEventListener("click", toggleItem, false);
 }
 function toggleItem() {
   const itemClass = this.parentNode.className;
-  for (i = 0; i < accItem.length; i++) {
-    accItem[i].className = "accordion-item close";
+  for (i = 0; i < accordianItem.length; i++) {
+    accordianItem[i].className = "accordion-item close";
   }
   if (itemClass == "accordion-item close") {
     this.parentNode.className = "accordion-item open";

@@ -198,8 +198,12 @@
     .prize-pool-wrapper {
       width: 100%;
       background-color: transparent;
-      margin: 0 auto var(--gutter);
+      margin: 0 0 var(--gutter);
       max-width: 800px;
+    }
+
+    & h2 {
+      text-align: center;
     }
 
     .accordian-container {
