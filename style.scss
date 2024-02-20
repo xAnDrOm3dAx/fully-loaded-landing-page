@@ -307,14 +307,14 @@ img {
 }
 
 // Account Info & Points Redemption
-.section-3-container {
+/* .section-3-container {
   border-bottom: 2px solid #909090;
   border-top: 2px solid #909090;
   background-color: #ececec;
   position: relative;
 
   .entry-points-wrapper {
-    max-width: calc(800px + 2rem * 2);
+    max-width: 800px;
     margin: 0 auto;
     padding: var(--gutter);
 
@@ -459,6 +459,51 @@ img {
 
       .account-name span {
         min-width: 500px;
+      }
+    }
+  }
+} */
+
+.section-3-container {
+  border-bottom: 2px solid #909090;
+  border-top: 2px solid #909090;
+  background-color: #ececec;
+  position: relative;
+
+  .fl-customer-section-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--gutter);
+
+    .fl-cust-points-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .fl-cust-points {
+        // height: 100px;
+      }
+
+      .fl-cust-points-buttons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gutter-half);
+        .refresh,
+        .redeem {
+          flex: 1;
+          min-width: 150px;
+        }
+      }
+    }
+
+    .fl-redemption-content {
+      .fl-list-numbers {
+        // height: 100px;
+      }
+      .fl-redemption-form {
+        // height: 100px;
       }
     }
   }

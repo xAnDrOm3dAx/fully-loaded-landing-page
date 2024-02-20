@@ -271,138 +271,190 @@ img {
   max-width: 140px;
 }
 
+/* .section-3-container {
+  border-bottom: 2px solid #909090;
+  border-top: 2px solid #909090;
+  background-color: #ececec;
+  position: relative;
+
+  .entry-points-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--gutter);
+
+    .fully-loaded-points {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .account-name.logged-out span {
+      background: transparent;
+    }
+
+    .account-name span {
+      display: flex;
+      justify-content: center;
+      padding: 0.55rem;
+      font-weight: 600;
+      font-size: 1rem;
+      background: #eee;
+    }
+
+    .account-data-row {
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid #ccc;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    .account-data-row span:first-child {
+      font-weight: 600;
+    }
+
+    .account-data-row span {
+      flex: 1 0 auto;
+      width: 100%;
+      max-width: 50%;
+      padding: 0.55rem;
+      word-break: break-word;
+    }
+
+    .account-data-row:last-child span:last-child {
+      font-weight: 600;
+      color: #c00;
+    }
+
+    .fully-loaded-spinner {
+      display: none;
+      width: 50px;
+      height: 50px;
+      margin: 0 auto;
+      border-radius: 50%;
+      border: 3px solid;
+      border-color: #fed105 transparent transparent;
+      filter: hue-rotate(0deg);
+      transform: rotate(0deg);
+      transition: 0.5s ease;
+    }
+
+    .active-spinner {
+      display: block;
+      animation: fullyLoadedSpinner 0.6s ease infinite;
+    }
+
+    .fully-loaded-buttons {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--gutter-half);
+
+      .btn-reload,
+      .btn-redeem {
+        flex: 1;
+        min-width: 150px;
+        background-color: var(--color-black);
+      }
+    }
+
+    .fully-loaded-redeem-form {
+      display: none;
+      margin: 0 auto;
+      max-width: 500px;
+      width: 100%;
+
+      & h2 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin: var(--gutter-half) auto;
+      }
+
+      & form {
+        display: flex;
+        flex-direction: column;
+        gap: var(--gutter-half);
+      }
+    }
+
+    .fully-loaded-redeem-form.active-form {
+      display: block;
+    }
+
+    .fully-loaded-redeem-form .form-row {
+      display: -ms-flex;
+      display: flex;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+
+    .fully-loaded-redeem-form .form-row label {
+      font-weight: 600;
+    }
+
+    .fully-loaded-redeem-form .form-row label {
+      margin: 0 0 0.35rem;
+    }
+
+    #error-message-email,
+    #error-message-phone {
+      margin: 0.5rem 0 0;
+      text-align: center;
+    }
+
+    .fully-loaded-redeem-form .form-button {
+      display: flex;
+      justify-content: center;
+    }
+
+    .form-button button[type="submit"] {
+      background-color: var(--color-black);
+      border: 0;
+    }
+
+    .form-button button[type="submit"]:hover {
+      background-color: var(--_accent);
+      color: var(--color-black);
+    }
+
+    @media (min-width: 768px) {
+      .fully-loaded-points {
+        width: fit-content;
+      }
+
+      .account-name span {
+        min-width: 500px;
+      }
+    }
+  }
+} */
 .section-3-container {
   border-bottom: 2px solid #909090;
   border-top: 2px solid #909090;
   background-color: #ececec;
   position: relative;
 }
-.section-3-container .entry-points-wrapper {
-  max-width: calc(800px + 4rem);
+.section-3-container .fl-customer-section-wrapper {
+  max-width: 800px;
   margin: 0 auto;
   padding: var(--gutter);
 }
-.section-3-container .entry-points-wrapper .fully-loaded-points {
-  width: 100%;
-  margin: 0 auto;
-}
-.section-3-container .entry-points-wrapper .account-name.logged-out span {
-  background: transparent;
-}
-.section-3-container .entry-points-wrapper .account-name span {
+.section-3-container .fl-customer-section-wrapper .fl-cust-points-content {
   display: flex;
-  justify-content: center;
-  padding: 0.55rem;
-  font-weight: 600;
-  font-size: 1rem;
-  background: #eee;
-}
-.section-3-container .entry-points-wrapper .account-data-row {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid #ccc;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-}
-.section-3-container .entry-points-wrapper .account-data-row span:first-child {
-  font-weight: 600;
-}
-.section-3-container .entry-points-wrapper .account-data-row span {
-  flex: 1 0 auto;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 50%;
-  padding: 0.55rem;
-  word-break: break-word;
 }
-.section-3-container .entry-points-wrapper .account-data-row:last-child span:last-child {
-  font-weight: 600;
-  color: #c00;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-spinner {
-  display: none;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  border-radius: 50%;
-  border: 3px solid;
-  border-color: #fed105 transparent transparent;
-  filter: hue-rotate(0deg);
-  transform: rotate(0deg);
-  transition: 0.5s ease;
-}
-.section-3-container .entry-points-wrapper .active-spinner {
-  display: block;
-  animation: fullyLoadedSpinner 0.6s ease infinite;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-buttons {
+.section-3-container .fl-customer-section-wrapper .fl-cust-points-content .fl-cust-points-buttons {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: var(--gutter-half);
 }
-.section-3-container .entry-points-wrapper .fully-loaded-buttons .btn-reload,
-.section-3-container .entry-points-wrapper .fully-loaded-buttons .btn-redeem {
+.section-3-container .fl-customer-section-wrapper .fl-cust-points-content .fl-cust-points-buttons .refresh,
+.section-3-container .fl-customer-section-wrapper .fl-cust-points-content .fl-cust-points-buttons .redeem {
   flex: 1;
   min-width: 150px;
-  background-color: var(--color-black);
 }
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form {
-  display: none;
-  margin: 0 auto;
-  max-width: 500px;
-  width: 100%;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form h2 {
-  font-size: 1.3rem;
-  text-align: center;
-  margin: var(--gutter-half) auto;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form form {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gutter-half);
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form.active-form {
-  display: block;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row {
-  display: -ms-flex;
-  display: flex;
-  flex-direction: column;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row label {
-  font-weight: 600;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-row label {
-  margin: 0 0 0.35rem;
-}
-.section-3-container .entry-points-wrapper #error-message-email,
-.section-3-container .entry-points-wrapper #error-message-phone {
-  margin: 0.5rem 0 0;
-  text-align: center;
-}
-.section-3-container .entry-points-wrapper .fully-loaded-redeem-form .form-button {
-  display: flex;
-  justify-content: center;
-}
-.section-3-container .entry-points-wrapper .form-button button[type=submit] {
-  background-color: var(--color-black);
-  border: 0;
-}
-.section-3-container .entry-points-wrapper .form-button button[type=submit]:hover {
-  background-color: var(--_accent);
-  color: var(--color-black);
-}
-@media (min-width: 768px) {
-  .section-3-container .entry-points-wrapper .fully-loaded-points {
-    width: -moz-fit-content;
-    width: fit-content;
-  }
-  .section-3-container .entry-points-wrapper .account-name span {
-    min-width: 500px;
-  }
-}
-
 .section-4-container {
   background-color: #dce1e4;
   background-image: url(assets/background-images/sand-1.jpeg);

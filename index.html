@@ -363,61 +363,22 @@
 
     <!-- Account Info & Points Redemption -->
     <section class="section-3-container">
-      <div class="entry-points-wrapper">
-        <div class="fully-loaded-variables">
-          <input type="hidden" name="account">
-          <input type="hidden" name="email">
-          <input type="hidden" name="phone">
-          <input type="hidden" name="entries">
-          <input type="hidden" name="redeemedentries">
+      <div class="fl-customer-section-wrapper">
+        <div class="fl-cust-points-content">
+          <div class="fl-cust-points"></div>
+          <div class="fl-cust-points-buttons fully-loaded-buttons">
+            <button id="refresh" class="refresh btn-primary">Refresh</button>
+            <button id="redeem" class="redeem btn-primary">Redemption Form</button>
+          </div>
         </div>
-
-        <div class="fully-loaded-points"></div>
-
-        <div class="fully-loaded-spinner"></div>
-
-        <div class="fully-loaded-buttons">
-          <button class="btn-reload btn-primary">Reload Data</button>
-          <button class="btn-redeem btn-primary">Redeem Entries</button>
-        </div>
-
-        <div class="fully-loaded-redeem-form">
-          <h2>Redeem Your Entry Points Below</h2>
-
-          <form>
-            <div class="form-row">
-              <label>Account</label>
-              <input type="text" name="redeemAccount" disabled="disabled" readonly>
-            </div>
-
-            <div class="form-row">
-              <label>Email</label>
-              <input type="text" id="user-email" name="redeemEmail" placeholder="Your email address...">
-              <div id="error-message-email"></div> <!-- Placeholder for email error message -->
-            </div>
-
-            <div class="form-row">
-              <label>Phone</label>
-              <input type="text" id="user-phone" name="redeemPhone" placeholder="Your phone number...">
-              <div id="error-message-phone"></div> <!-- Placeholder for phone error message -->
-            </div>
-
-            <div class="form-row">
-              <label>Total Entry Points</label>
-              <input type="text" name="redeemEntryPoints" disabled="disabled" readonly>
-            </div>
-
-            <!-- <div id="error-message-email"></div> Placeholder for email error message -->
-            <!-- <div id="error-message-phone"></div> Placeholder for phone error message -->
-
-            <div class="form-button">
-              <button type="submit" id="submit-btn">Redeem Prize</button>
-            </div>
-          </form>
+        <div class="fl-redemption-content">
+          <div class="fl-list-numbers"></div>
+          <div class="fl-redemption-form"></div>
         </div>
       </div>
     </section>
 
+    <!-- Previous design -->
     <!-- <section class="section-3-container">
       <div class="entry-points-wrapper">
         <div class="fully-loaded-variables">
