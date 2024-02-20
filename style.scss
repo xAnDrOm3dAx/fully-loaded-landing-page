@@ -220,7 +220,7 @@ img {
         align-items: center;
 
         .pool-text {
-          width: 80px;
+          width: 60px;
 
           @media (min-width: 480px) {
             width: 100px;
@@ -552,14 +552,14 @@ img {
   animation: fadeIn 500ms ease-in 1s both;
 
   &.pool {
-    right: 0;
+    right: -14px;
     bottom: -28px;
   }
 
   > div {
     transform: translateY(0%) rotate(45deg);
-    width: 1.6em;
-    height: 1.6em;
+    width: 1.2em;
+    height: 1.2em;
     background-color: transparent;
     z-index: 10;
     position: absolute;
@@ -571,6 +571,18 @@ img {
   > div:first-child {
     bottom: 25px;
     animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+  }
+
+  @media (min-width: 480px) {
+    > div {
+      width: 1.6em;
+      height: 1.6em;
+    }
+
+    &.pool {
+      right: 0px;
+      bottom: -28px;
+    }
   }
 
   // > div:last-child {

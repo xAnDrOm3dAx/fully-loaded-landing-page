@@ -198,7 +198,7 @@ img {
   align-items: center;
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading .pool-text {
-  width: 80px;
+  width: 60px;
 }
 @media (min-width: 480px) {
   .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading .pool-text {
@@ -487,13 +487,13 @@ img {
   animation: fadeIn 500ms ease-in 1s both;
 }
 .scrolldown.pool {
-  right: 0;
+  right: -14px;
   bottom: -28px;
 }
 .scrolldown > div {
   transform: translateY(0%) rotate(45deg);
-  width: 1.6em;
-  height: 1.6em;
+  width: 1.2em;
+  height: 1.2em;
   background-color: transparent;
   z-index: 10;
   position: absolute;
@@ -504,6 +504,16 @@ img {
 .scrolldown > div:first-child {
   bottom: 25px;
   animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+}
+@media (min-width: 480px) {
+  .scrolldown > div {
+    width: 1.6em;
+    height: 1.6em;
+  }
+  .scrolldown.pool {
+    right: 0px;
+    bottom: -28px;
+  }
 }
 
 .animate {
