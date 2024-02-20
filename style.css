@@ -36,8 +36,6 @@ img {
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  height: 100%;
-  width: 100%;
 }
 .section-1-container .section-1-hero-wrapper .center-images-wrapper {
   display: flex;
