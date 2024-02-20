@@ -1,3 +1,8 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
 // Hero
 .section-1-container {
   border-bottom: 2px solid #909090;
@@ -31,8 +36,8 @@
       overflow: hidden;
       position: absolute;
       z-index: 1;
-      height: 100vh;
-      width: 100vw;
+      height: 100%;
+      width: 120%;
     }
 
     .center-images-wrapper {
@@ -48,8 +53,6 @@
 
         & img {
           animation: bounce 500ms ease-in 500ms 1 both;
-          width: 100%;
-          height: auto;
         }
       }
 
@@ -60,8 +63,6 @@
 
         & img {
           animation: fadeIn 500ms ease-in 1s both;
-          width: 100%;
-          height: auto;
         }
       }
     }
@@ -85,11 +86,6 @@
         left: 815px;
         z-index: -1;
         width: 141px;
-
-        & img {
-          width: 100%;
-          height: auto;
-        }
       }
 
       .santa-image {
@@ -98,11 +94,6 @@
         right: 811px;
         z-index: -1;
         width: 386px;
-
-        & img {
-          width: 100%;
-          height: auto;
-        }
       }
 
       .snowman-image {
@@ -111,52 +102,6 @@
         left: 827px;
         z-index: 0;
         width: 337px;
-
-        & img {
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
-
-    .scrolldown {
-      position: relative;
-      transform: translateX(-50%);
-      z-index: 10;
-      width: 2em;
-      color: var(--color-white);
-      animation: fadeIn 500ms ease-in 1s both;
-
-      &.left {
-        bottom: 0;
-        left: 7rem;
-      }
-
-      &.right {
-        bottom: 0;
-        right: 7rem;
-      }
-
-      > div {
-        transform: translateY(0%) rotate(45deg);
-        width: 3em;
-        height: 3em;
-        background-color: transparent;
-        z-index: 10;
-        position: absolute;
-        border-width: 0 0.25em 0.25em 0;
-        border-style: solid;
-        border-color: var(--color-white);
-      }
-
-      > div:first-child {
-        bottom: 25px;
-        animation: scrolldown 1.2s ease-in-out infinite 0.15s;
-      }
-
-      > div:last-child {
-        bottom: 40px;
-        animation: scrolldown 1.2s ease-in-out infinite 0.15s;
       }
     }
   }
@@ -186,11 +131,6 @@
       z-index: 10;
       margin: 0 var(--gutter-half) var(--gutter);
 
-      & img {
-        width: 100%;
-        height: auto;
-      }
-
       @media (min-width: 768px) {
         display: none;
       }
@@ -199,7 +139,7 @@
     .header-wrapper {
       display: none;
       flex-direction: column;
-      padding: 0 var(--gutter-half);
+      margin: 0 var(--gutter);
       max-width: 800px;
 
       @media (min-width: 768px) {
@@ -240,7 +180,8 @@
     .prize-pool-wrapper {
       width: 100%;
       background-color: transparent;
-      max-width: var(--width-max);
+      max-width: 1050px;
+      padding: 0 var(--gutter-half);
     }
 
     & h2 {
@@ -256,12 +197,6 @@
     }
 
     .accordion-wrapper {
-      background: transparent;
-      text-align: center;
-      width: 100%;
-      border-radius: 5px;
-      box-sizing: border-box;
-
       .accordion-item {
         display: block;
         width: 100%;
@@ -271,6 +206,7 @@
 
       .accordion-item-heading {
         cursor: pointer;
+        border-radius: var(--global-radius);
         background: rgb(223, 0, 9, 0.8);
         backdrop-filter: blur(1.7px);
         -webkit-backdrop-filter: blur(1.7px);
@@ -289,11 +225,6 @@
           @media (min-width: 480px) {
             width: 100px;
           }
-
-          & img {
-            width: 100%;
-            height: auto;
-          }
         }
 
         & span {
@@ -307,13 +238,16 @@
         backdrop-filter: blur(1.7px);
         -webkit-backdrop-filter: blur(1.7px);
         color: #cdd7d8;
+        border-top-left-radius: var(--global-radius);
+        border-top-right-radius: var(--global-radius);
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
       }
 
       .close .accordion-item-content {
         height: 0px;
         transition: height 1s ease-out;
         transform: scaleY(0);
-        display: block;
       }
 
       .open .accordion-item-content {
@@ -323,48 +257,23 @@
         transform-origin: top;
         transition: transform 0.4s ease;
         box-sizing: border-box;
-        max-height: 500px;
+        max-height: 600px;
         overflow-y: scroll;
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+        grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
         grid-auto-rows: auto;
         grid-gap: 1rem;
-        background: rgba(87, 88, 88, 0.38);
+        background: #ececec;
         backdrop-filter: blur(1.7px);
         -webkit-backdrop-filter: blur(1.7px);
+        border-bottom-left-radius: var(--global-radius);
+        border-bottom-right-radius: var(--global-radius);
 
         // @media (min-width: 768px) {
-        //   grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+        //   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
         // }
       }
-
-      // .open .accordionItemContent {
-      //   border-radius: 0 0 3px 3px;
-      //   margin: 0px 0px 10px 0px;
-      //   padding: var(--gutter);
-      //   transform: scaleY(1);
-      //   transform-origin: top;
-      //   transition: transform 0.4s ease;
-      //   box-sizing: border-box;
-      //   max-height: 600px;
-      //   overflow-y: scroll;
-      //   display: grid;
-      //   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-      //   grid-auto-rows: auto;
-      //   grid-gap: 1rem;
-      //   background: rgba(87, 88, 88, 0.38);
-      //   backdrop-filter: blur(1.7px);
-      //   -webkit-backdrop-filter: blur(1.7px);
-
-      //   @media (min-width: 480px) {
-      //     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      //   }
-
-      //   @media (min-width: 1200px) {
-      //     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      //   }
-      // }
 
       .prizes-wrapper {
         display: flex;
@@ -372,19 +281,12 @@
         align-items: center;
         justify-content: center;
         background: #ffffff;
-        // border-radius: var(--global-radius);
+        border-radius: var(--global-radius);
         border: solid 1px var(--color-gray-light);
         padding: var(--gutter);
         gap: var(--gutter-half);
 
-        // @media (min-width: 480px) {
-        //   flex-direction: row;
-        //   padding: var(--gutter-half);
-        // }
-
         & h2 {
-          flex: 1;
-          margin: var(--gutter-half) 0 0;
           font-family: "Work Sans", sans-serif;
           font-weight: var(--font-weight-400);
           font-size: var(--font-size-medium);
@@ -397,7 +299,7 @@
         }
 
         .prize-image {
-          flex: 1;
+          max-width: 140px;
         }
       }
     }
@@ -641,6 +543,42 @@
 }
 
 // Animations
+.scrolldown {
+  position: relative;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 2em;
+  color: var(--color-white);
+  animation: fadeIn 500ms ease-in 1s both;
+
+  &.pool {
+    right: 0;
+    bottom: -28px;
+  }
+
+  > div {
+    transform: translateY(0%) rotate(45deg);
+    width: 1.6em;
+    height: 1.6em;
+    background-color: transparent;
+    z-index: 10;
+    position: absolute;
+    border-width: 0 0.25em 0.25em 0;
+    border-style: solid;
+    border-color: var(--color-white);
+  }
+
+  > div:first-child {
+    bottom: 25px;
+    animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+  }
+
+  // > div:last-child {
+  //   bottom: 40px;
+  //   animation: scrolldown 1.2s ease-in-out infinite 0.15s;
+  // }
+}
+
 .animate {
   animation: fadeInAndScale 500ms 200ms both;
 }

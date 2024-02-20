@@ -1,3 +1,8 @@
+img {
+  width: 100%;
+  height: auto;
+}
+
 .section-1-container {
   border-bottom: 2px solid #909090;
   background-color: #dce1e4;
@@ -31,8 +36,8 @@
   overflow: hidden;
   position: absolute;
   z-index: 1;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 120%;
 }
 .section-1-container .section-1-hero-wrapper .center-images-wrapper {
   display: flex;
@@ -47,8 +52,6 @@
 }
 .section-1-container .section-1-hero-wrapper .center-images-wrapper .fully-loaded-image img {
   animation: bounce 500ms ease-in 500ms 1 both;
-  width: 100%;
-  height: auto;
 }
 .section-1-container .section-1-hero-wrapper .center-images-wrapper .gift-bag-image {
   width: 450px;
@@ -57,8 +60,6 @@
 }
 .section-1-container .section-1-hero-wrapper .center-images-wrapper .gift-bag-image img {
   animation: fadeIn 500ms ease-in 1s both;
-  width: 100%;
-  height: auto;
 }
 .section-1-container .section-1-hero-wrapper .surrounding-images-wrapper {
   display: flex;
@@ -79,10 +80,6 @@
   z-index: -1;
   width: 141px;
 }
-.section-1-container .section-1-hero-wrapper .surrounding-images-wrapper .surfboard-image img {
-  width: 100%;
-  height: auto;
-}
 .section-1-container .section-1-hero-wrapper .surrounding-images-wrapper .santa-image {
   position: absolute;
   bottom: 213px;
@@ -90,55 +87,12 @@
   z-index: -1;
   width: 386px;
 }
-.section-1-container .section-1-hero-wrapper .surrounding-images-wrapper .santa-image img {
-  width: 100%;
-  height: auto;
-}
 .section-1-container .section-1-hero-wrapper .surrounding-images-wrapper .snowman-image {
   position: absolute;
   bottom: 155px;
   left: 827px;
   z-index: 0;
   width: 337px;
-}
-.section-1-container .section-1-hero-wrapper .surrounding-images-wrapper .snowman-image img {
-  width: 100%;
-  height: auto;
-}
-.section-1-container .section-1-hero-wrapper .scrolldown {
-  position: relative;
-  transform: translateX(-50%);
-  z-index: 10;
-  width: 2em;
-  color: var(--color-white);
-  animation: fadeIn 500ms ease-in 1s both;
-}
-.section-1-container .section-1-hero-wrapper .scrolldown.left {
-  bottom: 0;
-  left: 7rem;
-}
-.section-1-container .section-1-hero-wrapper .scrolldown.right {
-  bottom: 0;
-  right: 7rem;
-}
-.section-1-container .section-1-hero-wrapper .scrolldown > div {
-  transform: translateY(0%) rotate(45deg);
-  width: 3em;
-  height: 3em;
-  background-color: transparent;
-  z-index: 10;
-  position: absolute;
-  border-width: 0 0.25em 0.25em 0;
-  border-style: solid;
-  border-color: var(--color-white);
-}
-.section-1-container .section-1-hero-wrapper .scrolldown > div:first-child {
-  bottom: 25px;
-  animation: scrolldown 1.2s ease-in-out infinite 0.15s;
-}
-.section-1-container .section-1-hero-wrapper .scrolldown > div:last-child {
-  bottom: 40px;
-  animation: scrolldown 1.2s ease-in-out infinite 0.15s;
 }
 
 .section-2-container {
@@ -166,10 +120,6 @@
   z-index: 10;
   margin: 0 var(--gutter-half) var(--gutter);
 }
-.section-2-container .section-2-wrapper .header-wrapper-mobile img {
-  width: 100%;
-  height: auto;
-}
 @media (min-width: 768px) {
   .section-2-container .section-2-wrapper .header-wrapper-mobile {
     display: none;
@@ -178,7 +128,7 @@
 .section-2-container .section-2-wrapper .header-wrapper {
   display: none;
   flex-direction: column;
-  padding: 0 var(--gutter-half);
+  margin: 0 var(--gutter);
   max-width: 800px;
 }
 @media (min-width: 768px) {
@@ -213,7 +163,8 @@
 .section-2-container .section-2-wrapper .prize-pool-wrapper {
   width: 100%;
   background-color: transparent;
-  max-width: var(--width-max);
+  max-width: 1050px;
+  padding: 0 var(--gutter-half);
 }
 .section-2-container .section-2-wrapper h2 {
   text-align: center;
@@ -225,13 +176,6 @@
   width: 100%;
   margin: 0 0 var(--gutter);
 }
-.section-2-container .section-2-wrapper .accordion-wrapper {
-  background: transparent;
-  text-align: center;
-  width: 100%;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
 .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item {
   display: block;
   width: 100%;
@@ -240,6 +184,7 @@
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading {
   cursor: pointer;
+  border-radius: var(--global-radius);
   background: rgba(223, 0, 9, 0.8);
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
@@ -260,10 +205,6 @@
     width: 100px;
   }
 }
-.section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading .pool-text img {
-  width: 100%;
-  height: auto;
-}
 .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading span {
   font-size: 1rem;
 }
@@ -273,12 +214,15 @@
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
   color: #cdd7d8;
+  border-top-left-radius: var(--global-radius);
+  border-top-right-radius: var(--global-radius);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .close .accordion-item-content {
   height: 0px;
   transition: height 1s ease-out;
   transform: scaleY(0);
-  display: block;
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .open .accordion-item-content {
   margin: 0px 0px 10px 0px;
@@ -287,16 +231,18 @@
   transform-origin: top;
   transition: transform 0.4s ease;
   box-sizing: border-box;
-  max-height: 500px;
+  max-height: 600px;
   overflow-y: scroll;
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 250px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
   grid-auto-rows: auto;
   grid-gap: 1rem;
-  background: rgba(87, 88, 88, 0.38);
+  background: #ececec;
   backdrop-filter: blur(1.7px);
   -webkit-backdrop-filter: blur(1.7px);
+  border-bottom-left-radius: var(--global-radius);
+  border-bottom-right-radius: var(--global-radius);
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper {
   display: flex;
@@ -304,13 +250,12 @@
   align-items: center;
   justify-content: center;
   background: #ffffff;
+  border-radius: var(--global-radius);
   border: solid 1px var(--color-gray-light);
   padding: var(--gutter);
   gap: var(--gutter-half);
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper h2 {
-  flex: 1;
-  margin: var(--gutter-half) 0 0;
   font-family: "Work Sans", sans-serif;
   font-weight: var(--font-weight-400);
   font-size: var(--font-size-medium);
@@ -323,7 +268,7 @@
   }
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper .prize-image {
-  flex: 1;
+  max-width: 140px;
 }
 
 .section-3-container {
@@ -531,6 +476,34 @@
 }
 .section-4-container .section-4-wrapper .logos .sherrif-logo {
   flex: 1;
+}
+
+.scrolldown {
+  position: relative;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 2em;
+  color: var(--color-white);
+  animation: fadeIn 500ms ease-in 1s both;
+}
+.scrolldown.pool {
+  right: 0;
+  bottom: -28px;
+}
+.scrolldown > div {
+  transform: translateY(0%) rotate(45deg);
+  width: 1.6em;
+  height: 1.6em;
+  background-color: transparent;
+  z-index: 10;
+  position: absolute;
+  border-width: 0 0.25em 0.25em 0;
+  border-style: solid;
+  border-color: var(--color-white);
+}
+.scrolldown > div:first-child {
+  bottom: 25px;
+  animation: scrolldown 1.2s ease-in-out infinite 0.15s;
 }
 
 .animate {
