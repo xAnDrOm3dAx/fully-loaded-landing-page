@@ -118,11 +118,10 @@ img {
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 
-  // @media (min-width: 768px) {
-  //   background-attachment: fixed;
-  // }
+  @media (min-width: 768px) {
+    background-attachment: fixed;
+  }
 
   .section-2-wrapper {
     display: flex;
