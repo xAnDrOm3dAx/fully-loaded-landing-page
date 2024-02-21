@@ -101,16 +101,11 @@ img {
 
 .section-2-container {
   background-color: #dce1e4;
-  background-image: url(https://static-files.bgwgroup.com.au/theme-she/img/assets/background-images/snow-background-3.jpeg);
-  background-position: 100% 100%;
+  background-image: url(assets/background-images/snow-background-3.jpeg);
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-}
-@media (min-width: 768px) {
-  .section-2-container {
-    background-position: center top;
-  }
 }
 .section-2-container .section-2-wrapper {
   display: flex;
