@@ -5,7 +5,7 @@ img {
 
 // Hero
 .section-1-container {
-  border-bottom: 2px solid #909090;
+  border-bottom: 2px solid #dedede;
   background-color: #dce1e4;
 
   .section-1-hero-wrapper-mobile {
@@ -266,7 +266,7 @@ img {
         grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
         grid-auto-rows: auto;
         grid-gap: 1rem;
-        background: #ececec;
+        background: #dedede;
         backdrop-filter: blur(1.7px);
         -webkit-backdrop-filter: blur(1.7px);
         border-bottom-left-radius: var(--global-radius);
@@ -284,7 +284,6 @@ img {
         justify-content: center;
         background: #ffffff;
         border-radius: var(--global-radius);
-        border: solid 1px var(--color-gray-light);
         padding: var(--gutter);
         gap: var(--gutter-half);
 
@@ -310,8 +309,8 @@ img {
 
 // Account Info & Points Redemption
 .section-3-container {
-  border-bottom: 2px solid #909090;
-  border-top: 2px solid #909090;
+  border-bottom: 2px solid #dedede;
+  border-top: 2px solid #dedede;
   background-color: #ffffff;
   position: relative;
 
@@ -499,6 +498,10 @@ img {
       }
     }
   }
+}
+
+.sherriffFooter {
+  margin-top: 1rem;
 }
 
 // Animations
