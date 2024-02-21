@@ -8,7 +8,6 @@ img {
   height: auto;
 }
 
-// Hero
 .section-1-container {
   border-bottom: 2px solid #dedede;
   background-color: #dce1e4;
@@ -42,8 +41,7 @@ img {
       overflow: hidden;
       position: absolute;
       z-index: 1;
-      // height: 100%;
-      // width: 100%;
+      height: 100%;
     }
 
     .center-images-wrapper {
@@ -112,7 +110,7 @@ img {
     }
   }
 }
-// Pools
+
 .section-2-container {
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-3.jpeg);
@@ -276,10 +274,6 @@ img {
         -webkit-backdrop-filter: blur(1.7px);
         border-bottom-left-radius: var(--global-radius);
         border-bottom-right-radius: var(--global-radius);
-
-        // @media (min-width: 768px) {
-        //   grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
-        // }
       }
 
       .prizes-wrapper {
@@ -312,7 +306,6 @@ img {
   }
 }
 
-// Account Info & Points Redemption
 .section-3-container {
   border-bottom: 2px solid #dedede;
   border-top: 2px solid #dedede;
@@ -426,7 +419,6 @@ img {
   }
 }
 
-// Footer
 .section-4-container {
   background-color: #dce1e4;
   background-image: url(assets/background-images/sand-1.jpeg);
@@ -434,7 +426,6 @@ img {
   background-position: 50% 75%;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   padding: var(--gutter);
 
   .section-4-wrapper {
