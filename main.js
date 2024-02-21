@@ -176,3 +176,18 @@ function toggleItem() {
     this.parentNode.className = "accordion-item open";
   }
 }
+//
+//
+//
+//
+//
+//Form Display
+const redeemEntries = document.querySelector(".redeem");
+const redeemForm = document.querySelector(".fl-redemption-content");
+redeemEntries.addEventListener("click", () => {
+  if (redeemForm.style.display === "none" || redeemForm.style.display === "") {
+    redeemForm.style.display = "flex";
+  } else {
+    redeemForm.style.display = "none";
+  }
+});
