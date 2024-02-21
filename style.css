@@ -282,7 +282,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: var(--gutter);
 }
 .section-3-container .fl-customer-section-wrapper .fl-cust-points-content {
   display: flex;
@@ -337,6 +336,7 @@ img {
 }
 .section-3-container .fl-customer-section-wrapper .fl-redemption-content {
   width: 100%;
+  display: none;
 }
 .section-3-container .fl-customer-section-wrapper .fl-redemption-content .fl-redemption-form {
   width: 100%;
@@ -349,6 +349,7 @@ img {
   gap: var(--gutter);
   width: 100%;
   align-items: center;
+  margin: var(--gutter) 0 0;
 }
 .section-3-container .fl-customer-section-wrapper .fl-redemption-content form .form-row {
   display: flex;
@@ -361,6 +362,7 @@ img {
 }
 .section-3-container .fl-customer-section-wrapper .fl-redemption-content form .form-button {
   width: 100%;
+  display: none;
 }
 .section-3-container .fl-customer-section-wrapper .fl-redemption-content form .form-button button {
   background-color: var(--color-black);

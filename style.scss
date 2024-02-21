@@ -21,6 +21,7 @@ img {
   .section-1-hero-wrapper {
     display: none;
     background-image: url("assets/background-images/background-image-1920_x_1080_alt.jpg");
+    // background-image: url("https://static-files.bgwgroup.com.au/theme-she/img/assets/background-images/background-image-1920_x_1080_alt.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,6 +111,7 @@ img {
 .section-2-container {
   background-color: #dce1e4;
   background-image: url(assets/background-images/snow-background-3.jpeg);
+  // background-image: url("https://static-files.bgwgroup.com.au/theme-she/img/assets/background-images/snow-background-3.jpeg");
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -320,7 +322,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: var(--gutter);
 
     .fl-cust-points-content {
       display: flex;
@@ -380,6 +381,7 @@ img {
 
     .fl-redemption-content {
       width: 100%;
+      display: none;
 
       .fl-redemption-form {
         width: 100%;
@@ -393,6 +395,7 @@ img {
         gap: var(--gutter);
         width: 100%;
         align-items: center;
+        margin: var(--gutter) 0 0;
 
         .form-row {
           display: flex;
@@ -407,6 +410,7 @@ img {
 
         .form-button {
           width: 100%;
+          display: none;
 
           & button {
             background-color: var(--color-black);
@@ -422,6 +426,7 @@ img {
 .section-4-container {
   background-color: #dce1e4;
   background-image: url(assets/background-images/sand-1.jpeg);
+  // background-image: url("https://static-files.bgwgroup.com.au/theme-she/img/assets/background-images/sand-1.jpeg");
   background-position: 50% 75%;
   background-repeat: no-repeat;
   background-size: cover;
