@@ -1,3 +1,8 @@
+.page-fullyloadedplaygroundpage .main__inner-wrapper {
+  padding: 0;
+  max-width: 100%;
+}
+
 img {
   width: 100%;
   height: auto;
