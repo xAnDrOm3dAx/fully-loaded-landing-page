@@ -281,9 +281,9 @@ img {
   position: relative;
 }
 .section-3-container .fl-customer-section-wrapper {
-  max-width: 800px;
+  max-width: 1050px;
   margin: 0 auto;
-  padding: var(--gutter);
+  padding: var(--gutter) var(--gutter-half);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -380,7 +380,7 @@ img {
   background-position: 50% 75%;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: var(--gutter);
+  padding: var(--gutter) var(--gutter-half);
 }
 .section-4-container .section-4-wrapper {
   background: rgba(87, 88, 88, 0.38);
