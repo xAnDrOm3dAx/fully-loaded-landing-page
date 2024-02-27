@@ -185,7 +185,6 @@ img {
   display: block;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Open-sans", Arial, sans-serif;
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .accordion-item-heading {
   cursor: pointer;
@@ -260,20 +259,14 @@ img {
   gap: var(--gutter-half);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px 3px;
 }
-.section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper h2 {
-  font-family: "Work Sans", sans-serif;
-  font-weight: var(--font-weight-400);
-  font-size: var(--font-size-medium);
-  color: var(--color-black);
-  line-height: 1.4rem !important;
-}
-@media (min-width: 480px) {
-  .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper h2 {
-    margin: 0;
-  }
+.section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper .accordian-item-header {
+  min-height: 35px;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper .prize-image {
-  max-width: 140px;
+  max-width: 120px;
 }
 
 .section-3-container {
