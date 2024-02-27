@@ -258,6 +258,7 @@ img {
   border-radius: var(--global-radius);
   padding: var(--gutter);
   gap: var(--gutter-half);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 4px 3px;
 }
 .section-2-container .section-2-wrapper .accordion-wrapper .prizes-wrapper h2 {
   font-family: "Work Sans", sans-serif;
