@@ -315,6 +315,51 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: var(--gutter);
+
+    .fl-tier-counter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .fl-tier-counter-header {
+        h2 {
+          font-size: var(--font-size-medium);
+          margin: 0;
+          text-align: center;
+
+          @media (min-width: 480px) {
+            font-size: var(--font-size-xlarge);
+          }
+        }
+
+        p {
+          font-size: var(--font-size-small);
+          display: flex;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+
+      .pool-entries {
+        display: flex;
+        gap: var(--gutter-half);
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @media (min-width: 480px) {
+          font-size: var(--font-size-medium);
+          gap: var(--gutter);
+        }
+
+        > div > span:nth-child(1) {
+          font-weight: 600;
+          margin-right: var(--gutter-half);
+          color: var(--color-alert-success--dark);
+        }
+      }
+    }
 
     .fl-cust-points-content {
       display: flex;
