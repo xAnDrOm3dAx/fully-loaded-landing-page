@@ -335,7 +335,7 @@ img {
 .section-3-container .fl-customer-section-wrapper .fl-tier-counter .fl-eligible {
   display: flex;
   justify-content: center;
-  gap: var(--gutter);
+  gap: var(--gutter-half);
   flex-wrap: wrap;
 }
 @media (min-width: 480px) {
@@ -358,11 +358,12 @@ img {
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
-  gap: var(--gutter);
+  gap: var(--gutter-half);
 }
 @media (min-width: 480px) {
   .section-3-container .fl-customer-section-wrapper .fl-tier-counter .fl-eligible .eligible-entries {
     flex-direction: row;
+    gap: var(--gutter);
   }
 }
 .section-3-container .fl-customer-section-wrapper .fl-cust-points-content {

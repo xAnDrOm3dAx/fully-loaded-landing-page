@@ -374,7 +374,7 @@ img {
       .fl-eligible {
         display: flex;
         justify-content: center;
-        gap: var(--gutter);
+        gap: var(--gutter-half);
         flex-wrap: wrap;
 
         @media (min-width: 480px) {
@@ -401,10 +401,11 @@ img {
           flex-direction: column;
           justify-content: center;
           flex-wrap: wrap;
-          gap: var(--gutter);
+          gap: var(--gutter-half);
 
           @media (min-width: 480px) {
             flex-direction: row;
+            gap: var(--gutter);
           }
         }
       }
