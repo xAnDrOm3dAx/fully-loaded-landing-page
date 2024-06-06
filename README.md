@@ -3,10 +3,6 @@
 Sherriff Christmas in July Landing Page for BGW
 https://xandrom3dax.github.io/fully-loaded-landing-page/
 
-# Portfolio Project
-
-Utilizing the skills that I have built on over the past year, I have created a portfolio to showcase all of the micro projects that I have completed as part of The Odin Project, Frontend Mentor, Scrimba, and other personal project ideas.
-
 ## Table of contents
 
 - [Overview](#overview)
